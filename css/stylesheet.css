@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    background-color: #eee;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    height: 100vh;
+    background-color: #aaa;
+}
+
+.jump {
+    height: 10vh;
+    background-color: green;
+    margin-bottom: 100vh;
+    position: fixed;
+}
+.menu {
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+}
+
