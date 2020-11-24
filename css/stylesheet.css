@@ -14,7 +14,14 @@
             4.1     Hero section
             4.2     Main (of landing page)
     -----------------------------------------        
-
+    5.0     APP PAGE COMPONENTS
+            5.1     Main (of app page)
+            5.2     Container for squares
+            5.3     Left square
+            5.4     Right square
+            5.4.1   Progress graphic container
+            5.4.2   Progress graphic indicators
+            
 */
 
 /* 1.0 RESETS AND VARIABLES */
@@ -172,4 +179,93 @@ ul li a:hover:not(.logo) {
     max-width: 150ch;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
+}
+
+/* 5.0 APP PAGE COMPONENTS */
+
+/* 5.1 Main */
+.main-app-page {
+    width: 100%;
+}
+
+/* 5.2 Container for squares */
+
+.main-grid-container {
+    margin: 2rem auto 2rem;
+    max-width: 90rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5%;
+}
+
+/* Direct children of container style */
+.main-grid-container > div {
+    background-color: white;
+    height: 70vh;
+}
+
+/* 5.3 Left square */
+
+.grid-col-left {
+    display: flex;
+}
+
+.preview-image-step1 {
+    display: block;
+    margin: auto;
+    height: 70%;
+    border-radius: 45px;
+    box-shadow: 5px 5px 20px grey;
+}
+
+/* 5.4 Right square */
+
+.grid-col-right {
+    position: relative;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.grid-col-right > * {
+    max-width: 30rem;
+    margin: 0 1rem;
+}
+
+/* 5.4.1 Progress graphic container */
+
+.progress-graphic {     
+    height: 20px;
+    width: 30%;
+    max-width: 30rem;
+    margin: 0;
+
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 15%;
+    display: flex;
+
+    align-items: center;
+}
+
+/* 5.4.2 Progress graphic indicators and line */
+
+.progress-indicator {
+    height: 100%;
+    flex-basis: 20px;
+    flex-grow: 0;
+    border-radius: 50%;
+    border: 3px solid black;
+    box-sizing: border-box;
+}
+
+.full {
+    background-color: black;
+}
+
+.progress-line {
+    height: 3px;
+    background-color: black;
+    flex-grow: 1;
 }
