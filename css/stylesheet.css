@@ -1,13 +1,19 @@
 /* Table of contents
 
     1.0     RESETS AND VARIABLES
-    2.0     DEFAULT STYLES
-    3.0     COMPONENTS
-        3.1     Navbar
+    -----------------------------------------
+    2.0     GLOBAL STYLES
+    -----------------------------------------
+    3.0     GLOBAL COMPONENTS
+            3.1     Navbar
             3.1.1   Current link styles
-            3.1.2   Logo
-        3.2     Hero Section
-
+            3.1.2   Logotype
+            3.2     Underline decoration for headers
+    -----------------------------------------
+    4.0     LANDING PAGE COMPONENTS
+            4.1     Hero section
+            4.2     Main (of landing page)
+    -----------------------------------------        
 
 */
 
@@ -23,7 +29,7 @@ body {
     background-color: #EFEFEF;
 }
 
-/* 2.0 Default styles */
+/* 2.0 Global styles */
 
 h1{
     font-family: 'Roboto', sans-serif;
@@ -43,6 +49,7 @@ h2{
     line-height: 1em;
     margin: 0;
     padding-bottom: 0.5em;
+    position: relative;
 }
 
 p {
@@ -57,7 +64,7 @@ p {
     margin: auto;
 }
 
-/* COMPONENTS */
+/* GLOBAL COMPONENTS */
 /* 3.1 Navbar */
 
 nav {
@@ -104,12 +111,12 @@ ul li a:hover:not(.logo) {
     width: 25%;
     background: var(--accent-colour);
 }
-
+/* Slightly darker text on current link */
 .currentPage {
     color: black;
 }
 
-/* 3.1.2 Logo */
+/* 3.1.2 Logotype */
 .logo {
     font-family: 'Carter One', cursive;
     font-size: 1.625rem;
@@ -120,8 +127,21 @@ ul li a:hover:not(.logo) {
     color: black;
 }
 
-/* Hero section */
+/* 3.2 Underline decoration for headers */
+.pynt:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 2ch;
+    height: 0.5rem;
+    background-color: var(--accent-colour);
+    border-radius: 50rem;
+}
 
+/* 4.0 LANDING PAGE COMPONENTS */
+
+/* 4.1 Hero section */
 
 .imagecontainer {
     padding-top: 5rem;
@@ -138,7 +158,9 @@ ul li a:hover:not(.logo) {
     border-radius: 3rem;
 }
 
-main {
+/* 4.2 Main (of landing page) */
+
+.main-landingpage {
     background-color: white;
     margin-top: -50vh;
     padding-top: 50vh;    
@@ -150,20 +172,4 @@ main {
     max-width: 150ch;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-}
-
-/* Underline decoration */
-
-.pynt {
-    position: relative;
-}
-.pynt:after {
-    position: absolute;
-    content: "";
-    left: 0;
-    bottom: 0;
-    width: 2ch;
-    height: 0.5rem;
-    background-color: var(--accent-colour);
-    border-radius: 50rem;
 }
