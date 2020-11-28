@@ -1,0 +1,74 @@
+/* GLOBAL COMPONENTS */
+/* 3.1 Navbar */
+
+nav {
+    width: 100%;
+    font-size: 1.125rem;
+    border-bottom: 1px solid #D1D1D1;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+ul li{
+    font-weight: 600;
+}
+
+ul li a {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+ul li a:not(.logo) {
+    color: #4F4F4F;
+    padding: 1rem 4rem 1rem 1rem;
+}
+
+ul li a:hover:not(.logo) {
+    text-decoration: underline;
+}
+
+/* 3.1.1 Current link styles */
+/* underline on current link */
+.currentPage:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 1rem;
+    height: 3px;
+    width: 25%;
+    background: var(--accent-colour);
+}
+/* Slightly darker text on current link */
+.currentPage {
+    color: black;
+}
+
+/* 3.1.2 Logotype */
+.logo {
+    font-family: 'Carter One', cursive;
+    font-size: 1.625rem;
+    letter-spacing: -0.04em;
+    font-weight: normal;
+    padding-left: 1rem;
+    padding-right: 4rem;
+    color: black;
+}
+
+/* 3.2 Underline decoration for headers */
+.pynt:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 2ch;
+    height: 0.5rem;
+    background-color: var(--accent-colour);
+    border-radius: 50rem;
+}

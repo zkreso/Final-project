@@ -157,6 +157,7 @@ ul li a:hover:not(.logo) {
 
 .heroImage {
     display: block;
+    width: 20%;
     margin-left: auto;
     margin-right: auto;
     box-shadow: 0px 80px 60px rgba(0, 0, 0, 0.2);
@@ -214,7 +215,7 @@ ul li a:hover:not(.logo) {
     display: block;
     margin: auto;
     height: 70%;
-    border-radius: 45px;
+    border-radius: 30px;
     box-shadow: 5px 5px 20px grey;
 }
 
