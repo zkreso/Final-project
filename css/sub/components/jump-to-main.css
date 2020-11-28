@@ -1,0 +1,10 @@
+.jump-to-main {
+    color: black;
+    background-color: #fff;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    border-radius: 0 0 1rem 1rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+    text-align: center;
+}
