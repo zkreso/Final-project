@@ -1,2 +1,7 @@
 @import "sub/components/jump-to-main.css";
-@import "stylesheet.css";
+@import "sub/1_Resets_and_variables.css";
+@import "sub/2_Global_styles.css";
+@import "sub/3_Navbar.css";
+@import "sub/4_Landing_page.css";
+@import "sub/5_App_page.css";
+
