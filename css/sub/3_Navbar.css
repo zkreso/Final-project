@@ -1,14 +1,14 @@
 /* GLOBAL COMPONENTS */
 /* 3.1 Navbar */
 
-nav {
+.nav {
     width: 100%;
     font-size: 1.8rem;
     border-bottom: .1rem solid #D1D1D1;
     text-align: center;
 }
 
-ul {
+.nav ul {
     display: flex;
     list-style-type: none;
     padding: 0;
@@ -16,22 +16,22 @@ ul {
     align-items: center;
 }
 
-ul li{
+.nav ul li{
     font-weight: 600;
 }
 
-ul li a {
+.nav ul li a {
     text-decoration: none;
     display: inline-block;
     position: relative;
 }
 
-ul li a:not(.logo) {
+.nav ul li a:not(.logo) {
     color: #4F4F4F;
     padding: 1.6rem 6.4rem 1.6rem 1.6rem;
 }
 
-ul li a:hover:not(.logo) {
+.nav ul li a:hover:not(.logo) {
     text-decoration: underline;
 }
 
