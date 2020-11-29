@@ -1,3 +1,9 @@
+.centered__footer {
+    text-align: center;
+    display: block;
+    height: 10rem;
+}
+
 .sources__btn:link, .sources__btn:visited {
     font-size: 1.6rem;
     text-decoration: none;
