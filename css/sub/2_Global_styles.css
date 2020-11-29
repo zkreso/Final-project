@@ -26,3 +26,9 @@ p {
     line-height: 1.7em;
     letter-spacing: -0.02em;
 }
+
+.centered {
+    text-align: center;
+    display: block;
+    height: 10rem;
+}
