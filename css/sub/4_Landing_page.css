@@ -44,6 +44,6 @@
 
 /* Media Queries */
 
-/*@media (max-width: 60rem) {
+@media (max-width: 60rem) {
     .mainContent {display: block;}
-}*/
+}

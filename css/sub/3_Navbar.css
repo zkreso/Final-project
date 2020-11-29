@@ -76,6 +76,11 @@
 
 /* 3.3 Jump to main content button */
 .jump-to-main {
+    left: -99rem;
+    position: absolute;
+} 
+
+.jump-to-main:focus, .jump-to-main:active {
     color: black;
     background-color: #fff;
     text-decoration: none;
@@ -83,4 +88,5 @@
     border-radius: 0 0 1.6rem 1.6rem;
     margin-bottom: 1.6rem;
     display: inline-block;
+    position: static;
 }

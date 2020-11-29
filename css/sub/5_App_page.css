@@ -8,46 +8,48 @@
 /* 5.2 Container for squares */
 
 .main-grid-container {
-    margin: 3.2rem auto 3.2rem;
-    max-width: 120rem;
+    margin: 2rem auto;
+    max-width: 140rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5%;
-}
-
-/* Direct children of container style */
-.main-grid-container > div {
+    grid-template-columns: 2fr 3fr;
     background-color: white;
-    height: 70vh;
+    border-radius: 25px;
+    box-shadow: 0px 5px #DDD;
+    border: 2px solid #DDD;
 }
 
 /* 5.3 Left square */
 
 .grid-col-left {
-    display: flex;
+    padding-top: 15rem;
+    padding-bottom: 15rem;
 }
 
-.preview-image-step1 {
+.preview-image {
     display: block;
     margin: auto;
-    height: 70%;
-    border-radius: 3rem;
-    box-shadow: .5rem .5rem 2rem grey;
+    box-shadow: 5px 5px 20px grey;
+    border-radius: 15px;
+    width: 250px;
+    max-width: 90vw;
 }
 
 /* 5.4 Right square */
 
 .grid-col-right {
     position: relative;
+    padding-top: 10rem;
+    padding-bottom: 10rem;   
     display: grid;
     justify-content: center;
     align-content: center;
 }
 
 .grid-col-right > * {
-    max-width: 48rem;
+    max-width: 65rem;
     margin: 0 1.6rem;
 }
+
 
 /* 5.4.1 Progress graphic container */
 
@@ -60,7 +62,7 @@
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
-    bottom: 15%;
+    bottom: 12%;
     display: flex;
 
     align-items: center;
@@ -85,4 +87,53 @@
     height: .3rem;
     background-color: black;
     flex-grow: 1;
+}
+
+/* 5.5 Bottom box */
+
+.app-page-bottom-content {
+    max-width: 140rem;
+    margin: auto;
+}
+
+/* 5.6 Summary */
+
+.app--page--summary {
+    margin: auto;
+    max-width: 140rem;
+}
+
+.app--page--summary h1 {
+    padding: 0;
+}
+
+/* 5.7 Responsive */
+
+@media only screen and (max-width: 900px) {
+    
+    .main-grid-container {
+        grid-template-columns: 1fr;
+        border: none;
+        border-radius: 0px;
+    }
+
+    .grid-col-left {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+
+    .grid-col-right {
+        padding-top: 0rem;
+        padding-bottom: 12rem;   
+    }
+
+    .progress-graphic {     
+        width: 60%;
+        bottom: 8%;
+    }
+
+    .grid-col-right h2 {
+        text-align: center;
+    }
+    
 }
