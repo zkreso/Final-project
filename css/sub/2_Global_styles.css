@@ -36,8 +36,7 @@ p {
 
 .centered {
     text-align: center;
-    display: block;
-    height: 10rem;
+    margin: auto;
 }
 
 /*  MEDIA QUERY
