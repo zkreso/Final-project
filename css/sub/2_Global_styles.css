@@ -11,6 +11,19 @@ h1 {
 
 }
 
+/* 3.2 Underline decoration for headers */
+.pynt:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 2ch;
+    height: 0.8rem;
+    background-color: var(--accent-colour);
+    border-radius: 50rem;
+}
+
+
 h2 {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
@@ -21,8 +34,33 @@ h2 {
     position: relative;
 }
 
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 1em;
+}
+
 p {
     font-size: 2rem;
     line-height: 1.7em;
     letter-spacing: -0.02em;
+}
+
+.centered {
+    text-align: center;
+    margin: auto;
+}
+
+/*  MEDIA QUERY
+    Global styles on mobile
+*/
+
+@media (max-width: 60rem) {
+    
+    /* skal tilsvare 16px*/
+    :root {
+        font-size: 50%;
+    }
+    
 }
