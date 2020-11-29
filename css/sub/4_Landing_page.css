@@ -49,7 +49,7 @@
 }
 
 .main-landingpage {
-    background-color: white;
+    background-color: var(--colour-secondary-light);
     margin-top: -50vh;
     padding-top: 50vh;    
 }
@@ -60,6 +60,17 @@
     max-width: 240ch;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
+}
+
+.section--styling {
+    margin: 2rem auto;
+    max-width: 200rem;
+    background-color: var(--colour-tertiary);
+    border-radius: 2.5rem;
+    box-shadow: 0 .5rem #DDD;
+    border: .2rem solid #DDD;
+    padding: 2rem 4rem;
+    margin-bottom: 15rem;
 }
 
 /* Media Queries */

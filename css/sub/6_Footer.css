@@ -2,13 +2,14 @@
     text-align: center;
     display: block;
     height: 10rem;
+    background-color: var(--colour-secondary);
 }
 
 .sources__btn:link, .sources__btn:visited {
     font-size: 1.6rem;
     text-decoration: none;
-    background-color: #fff;
-    color: black;
+    background-color: var(--colour-tertiary);
+    color: var(--colour-secondary);
     margin: 3rem 0;
     padding: 1rem 3rem;
     display: inline-block;
