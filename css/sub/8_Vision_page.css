@@ -1,0 +1,47 @@
+.vision-container {
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 140rem;
+    border-radius: 25px;
+    box-shadow: 0px 5px #DDD;
+    border: 2px solid #DDD;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.vision-page-header {
+    margin: auto;
+    max-width: 140rem;
+}
+
+.vision-page-header h1 {
+    padding: 3rem 0;
+}
+
+.vision-container h2, p {
+    padding: 2rem 2rem 2rem 2rem;
+
+}
+
+.vision-part-one {
+    flex-basis: 50%;
+    box-sizing: border-box;
+}
+
+.vision-images {
+    flex-basis: 50%;
+    box-sizing: border-box;
+}
+
+.vision-part-two {
+    flex-basis: 90%;
+    box-sizing: border-box;
+}
+
+.vision-part-three {
+    flex-basis: 90%;
+    box-sizing: border-box;
+}
+
