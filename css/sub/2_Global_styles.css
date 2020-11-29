@@ -1,9 +1,9 @@
 /* 2.0 Global styles */
 
-h1{
+h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size: 3.75rem;
+    font-size: 6rem;
     line-height: 1em;
     margin: 0;
     padding: 1em;
@@ -11,10 +11,10 @@ h1{
 
 }
 
-h2{
+h2 {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size: 3.75rem;
+    font-size: 6rem;
     line-height: 1em;
     margin: 0;
     padding-bottom: 0.5em;
@@ -22,13 +22,7 @@ h2{
 }
 
 p {
-    font-size: 1.25rem;
+    font-size: 2rem;
     line-height: 1.7em;
     letter-spacing: -0.02em;
-}
-
-.centered {
-    text-align: center;
-    margin: auto;
-    margin: auto;
 }
