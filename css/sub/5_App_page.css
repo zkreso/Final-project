@@ -8,8 +8,8 @@
 /* 5.2 Container for squares */
 
 .main-grid-container {
-    margin: 3.2rem auto;
-    max-width: 120rem;
+    margin: 2rem auto;
+    max-width: 140rem;
     display: grid;
     grid-template-columns: 2fr 3fr;
     background-color: white;
@@ -21,8 +21,8 @@
 /* 5.3 Left square */
 
 .grid-col-left {
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+    padding-top: 15rem;
+    padding-bottom: 15rem;
 }
 
 .preview-image {
@@ -46,7 +46,7 @@
 }
 
 .grid-col-right > * {
-    max-width: 48rem;
+    max-width: 65rem;
     margin: 0 1.6rem;
 }
 
@@ -92,7 +92,7 @@
 /* 5.5 Bottom box */
 
 .app-page-bottom-content {
-    max-width: 120rem;
+    max-width: 140rem;
     margin: auto;
 }
 
@@ -100,7 +100,7 @@
 
 .app--page--summary {
     margin: auto;
-    max-width: 120rem;
+    max-width: 140rem;
 }
 
 .app--page--summary h1 {
