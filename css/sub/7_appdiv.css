@@ -35,3 +35,14 @@
 .app-div-card-bottom p {
     font-size: 1.5rem;
 }
+
+@media only screen and (max-width: 900px) {
+    .app-div-card-bottom {
+        grid-column: span 4;
+        padding-bottom: 0;
+    }
+
+    .app-div-card-bottom h3 {
+        text-align: left;
+    }
+}
