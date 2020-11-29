@@ -32,6 +32,22 @@
 
 /* 4.2 Main (of landing page) */
 
+.left-grid-column {
+    margin: 0 5rem;
+}
+
+.climate-goal {
+    width: 20rem;
+}
+
+.climate-goal-hidden {
+    width: 15rem;
+    float: right;
+    margin: 0 3rem;
+    position: absolute;
+    left: -99rem;
+}
+
 .main-landingpage {
     background-color: white;
     margin-top: -50vh;
@@ -49,5 +65,18 @@
 /* Media Queries */
 
 @media (max-width: 60rem) {
-    .mainContent {display: block;}
+   
+}
+
+@media (max-width: 60rem) {
+
+    .mainContent {display: block;
+    margin: 0 3rem;}
+
+    .climate-goal-hidden {position: static;}
+
+    .climate-goal {
+        position: absolute;
+        left: -99rem;
+    }
 }
