@@ -95,6 +95,10 @@
         flex-grow: 1;
     }
 
+    .nav ul li a:not(.logo) {
+        padding: 1.6rem 1.6rem 1.6rem 1.6rem;
+    }
+
     .logo {
         flex-shrink: 0;
         width: 100vw;
