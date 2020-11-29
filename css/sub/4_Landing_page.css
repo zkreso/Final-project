@@ -2,6 +2,10 @@
 
 /* 4.1 Hero section */
 
+.hero {
+    text-align: center;
+}
+
 .imagecontainer {
     padding-top: 8rem;
     padding-bottom: 8rem;
