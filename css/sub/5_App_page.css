@@ -101,10 +101,23 @@
 .app--page--summary {
     margin: auto;
     max-width: 140rem;
+    background-color: white;
 }
 
-.app--page--summary h1 {
+.app--page--summary > * {
     padding: 0;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+/* Selects the first element in the div and adds padding to top */
+.app--page--summary > *:first-child {
+    padding-top: 3rem;
+}
+
+/* Selects the last element in the div and adds padding to bottom */
+.app--page--summary > *:last-child {
+    padding-bottom: 3rem;
 }
 
 /* 5.7 Responsive */
@@ -122,6 +135,10 @@
         padding-bottom: 6rem;
     }
 
+    .grid-col-left > img {
+        width: 50%;
+    }
+
     .grid-col-right {
         padding-top: 0rem;
         padding-bottom: 12rem;   
@@ -134,6 +151,10 @@
 
     .grid-col-right h2 {
         text-align: center;
+    }
+
+    .grid-col-right > p {
+        margin: 0 3rem;
     }
     
 }
