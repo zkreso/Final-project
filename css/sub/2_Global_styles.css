@@ -39,3 +39,16 @@ p {
     display: block;
     height: 10rem;
 }
+
+/*  MEDIA QUERY
+    Global styles on mobile
+*/
+
+@media (max-width: 60rem) {
+    
+    /* skal tilsvare 16px*/
+    :root {
+        font-size: 50%;
+    }
+    
+}
