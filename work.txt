@@ -1,0 +1,23 @@
+Zlatko:
+
+Navbar
+linje til navbar
+Read more
+styling vision
+
+Isak:
+
+mobilbilde
+skyggen
+tilhørende
+eksperimenter med marg landing
+halver avstand mellom divs
+
+Øystein:
+
+tekst app-pitch
+tekstansvarlig
+linjeskift vision
+sjekk sup
+avstand footer sources
+merge divs sources
