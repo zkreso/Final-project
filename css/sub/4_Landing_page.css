@@ -3,7 +3,10 @@
 /* 4.1 Hero section */
 .header__h1 {
     max-width: 30ch;
-    font-size: 5rem;
+    padding-top: 8rem;
+    padding-bottom: 6rem;
+    padding-right: 6rem;
+    padding-left: 6rem;
 }
 
 .header__p {
