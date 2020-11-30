@@ -99,6 +99,38 @@
     
 }
 
+.btn--main:link, .btn--main:visited {
+    color: #fff;
+    background-color: var(--colour-button);
+}
+
+.btn--main:hover, .btn--main:active {
+    background-color: var(--colour-secondary);
+    animation: fillBtn .5s;
+}
+
+.arrow {
+    border: solid #fff;
+    border-width: 0 .3rem .3rem 0;
+    display: inline-block;
+    padding: .3rem;
+}
+
+.right {
+    transform: rotate(-45deg);
+}
+
+/* Animations */
+
+@keyframes fillBtn {
+    0% {
+        background-color: var(--colour-button);
+    }
+    100% {
+        background-color: var(--colour-secondary);
+    }
+}
+
 /* Media Queries */
 
 @media (max-width: 1450px) {
