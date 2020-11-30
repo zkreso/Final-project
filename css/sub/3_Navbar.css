@@ -6,6 +6,7 @@
     font-size: 1.8rem;
     border-bottom: .1rem solid #D1D1D1;
     text-align: center;
+    background-image: linear-gradient(to top, var(--colour-secondary), var(--colour-primary));
 }
 
 .nav ul {
@@ -27,7 +28,7 @@
 }
 
 .nav ul li a:not(.logo) {
-    color: #4F4F4F;
+    color: #efefef;
     padding: 1.6rem 6.4rem 1.6rem 1.6rem;
 }
 
@@ -59,7 +60,7 @@
     font-weight: normal;
     padding-left: 1.6rem;
     padding-right: 6.4rem;
-    color: black;
+    color: #efefef;
 }
 
 /* 3.2 Underline decoration for headers */
@@ -81,8 +82,8 @@
 } 
 
 .jump-to-main:focus, .jump-to-main:active {
-    color: black;
-    background-color: #fff;
+    color: var(--colour-secondary);
+    background-color: #efefef;
     text-decoration: none;
     padding: 1.6rem 4.8rem;
     border-radius: 0 0 1.6rem 1.6rem;

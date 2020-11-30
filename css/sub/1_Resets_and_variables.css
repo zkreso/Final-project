@@ -4,13 +4,15 @@
     --accent-colour: #372CA7;
     --colour-primary: #003539;
     --colour-secondary: #014c51;
-    --colour-tertiary: #ece8c3;
-    --colour-secondary-light:  #d1fcff81;
+    /*--colour-tertiary: #ece8c3;*/
+    --colour-secondary-light:  #2dcedab9;
+    --colour-background:  #40d9e4d2 ;
+    /* --colour-mixin: #e2fbfda1 */
 }
 
 body {
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
-    background-color: var(--colour-secondary);
+    background-color: #efefef;
 }

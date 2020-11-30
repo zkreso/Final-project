@@ -2,6 +2,20 @@
 
 /* 4.1 Hero section */
 
+.header {
+    
+}
+
+.header__h1 {
+    max-width: 48ch;
+    color: var(--colour-secondary);
+}
+
+.header__p {
+    max-width: 128ch;
+    color: var(--colour-secondary);
+}
+
 .hero {
     text-align: center;
 }
@@ -22,13 +36,7 @@
     border-radius: 4.8rem;
 }
 
-.header__h1 {
-    max-width: 48ch;
-}
 
-.header__p {
-    max-width: 128ch;
-}
 
 /* 4.2 Main (of landing page) */
 
@@ -48,8 +56,13 @@
     left: -99rem;
 }
 
+.main-colour-mixin {
+    background-color: var(--colour-secondary);
+}
+
 .main-landingpage {
-    background-color: var(--colour-secondary-light);
+    /*background-color: var(--colour-secondary-light);*/
+    background-image: linear-gradient(to bottom, var(--colour-secondary-light), var(--colour-background));
     margin-top: -50vh;
     padding-top: 50vh;    
 }
@@ -65,7 +78,7 @@
 .section--styling {
     margin: 2rem auto;
     max-width: 200rem;
-    background-color: var(--colour-tertiary);
+    background-color: #EFEFEF;
     border-radius: 2.5rem;
     box-shadow: 0 .5rem #DDD;
     border: .2rem solid #DDD;
