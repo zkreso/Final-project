@@ -7,10 +7,12 @@
     padding-bottom: 6rem;
     padding-right: 6rem;
     padding-left: 6rem;
+    line-height: 7rem;
 }
 
 .header__p {
     font-size: 3rem;
+    letter-spacing: .1rem;
 }
 
 .hero {
@@ -53,7 +55,6 @@
     left: 50%;
     top: 2rem;
     transform: translateX(-50%);
-    border: .7rem solid;
     background-color: var(--colour-secondary);
 }
 
