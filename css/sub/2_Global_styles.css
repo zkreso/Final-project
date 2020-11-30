@@ -19,6 +19,7 @@ h2 {
     margin: 0;
     padding-bottom: 0.5em;
     position: relative;
+    color: #010101;
 }
 
 h3 {
@@ -43,7 +44,7 @@ p {
     Global styles on mobile
 */
 
-@media (max-width: 60rem) {
+@media (max-width: 600px) {
     
     /* skal tilsvare 16px*/
     :root {
@@ -51,3 +52,4 @@ p {
     }
     
 }
+
