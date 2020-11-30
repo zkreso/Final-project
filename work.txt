@@ -13,6 +13,7 @@ tilhørende
 eksperimenter med marg landing
 halver avstand mellom divs
 alt tekst
+variables copy paste
 
 siste pri: link til un bærekraftmål
 
@@ -25,3 +26,6 @@ avstand footer sources
 merge divs sources
 
 siste pri: sjekk sup
+
+
+Aller siste pri: bytte bilder
