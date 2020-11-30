@@ -4,9 +4,8 @@
 .nav {
     width: 100%;
     font-size: 1.8rem;
-    border-bottom: .1rem solid #D1D1D1;
     text-align: center;
-    background-color: #EFEFEF;
+    background-image: linear-gradient(to top, var(--colour-secondary), var(--colour-primary));
     position: fixed;
     z-index: 99;
     top: 0;
@@ -32,7 +31,7 @@
 }
 
 .nav ul li a:not(.logo) {
-    color: #4F4F4F;
+    color: #efefef;
     padding: 1.6rem 3.2rem 1.6rem 3.2rem;
 }
 
@@ -48,8 +47,9 @@
     bottom: 0;
     left: 25%;
     right: 25%;
-    height: .5rem;
-    background: var(--accent-colour);
+    height: .6rem;
+    background: #efefef;
+    border-radius: 10rem 10rem 0 0;
 }
 /* Slightly darker text on current link */
 .currentPage {
@@ -64,7 +64,7 @@
     font-weight: normal;
     padding-left: 3.2rem;
     padding-right: 3.2rem;
-    color: black;
+    color: #efefef;
 }
 
 /* 3.3 Jump to main content button */
@@ -74,8 +74,8 @@
 } 
 
 .jump-to-main:focus, .jump-to-main:active {
-    color: black;
-    background-color: #fff;
+    color: var(--colour-secondary);
+    background-color: #efefef;
     text-decoration: none;
     padding: 1.6rem 4.8rem;
     border-radius: 0 0 1.6rem 1.6rem;
