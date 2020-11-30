@@ -110,16 +110,6 @@
     padding-right: 3rem;
 }
 
-/* Selects the first element in the div and adds padding to top */
-.app--page--summary > *:first-child {
-    padding-top: 3rem;
-}
-
-/* Selects the last element in the div and adds padding to bottom */
-.app--page--summary > *:last-child {
-    padding-bottom: 3rem;
-}
-
 /* 5.7 Responsive */
 
 @media only screen and (max-width: 900px) {

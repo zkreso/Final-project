@@ -3,7 +3,10 @@
 /* 4.1 Hero section */
 .header__h1 {
     max-width: 30ch;
-    font-size: 5rem;
+    padding-top: 8rem;
+    padding-bottom: 6rem;
+    padding-right: 6rem;
+    padding-left: 6rem;
 }
 
 .header__p {
@@ -12,6 +15,15 @@
 
 .hero {
     text-align: center;
+}
+
+.header-container {
+    width: 100%;
+    background-color: red;
+    padding-top: 15rem;
+    margin-top: -15rem;
+    padding-bottom: 35rem;
+    margin-bottom: -35rem;
 }
 
 
@@ -26,10 +38,8 @@
     margin-left: auto;
     margin-right: auto;
     box-shadow: 0 8rem 6rem rgba(0, 0, 0, 0.2);
-    position: relative;
     z-index: 1;
     border-radius: 4.8rem;
-    border: .4rem solid #CCC;
 }
 
 /* 4.2 Main (of landing page) */
@@ -51,11 +61,6 @@
     margin: 0 auto 0 3rem;
     position: absolute;
     left: -99rem;
-}
-
-.main-landingpage {
-    margin-top: -50vh;
-    padding-top: 50vh;    
 }
 
 .mainContent {
@@ -81,7 +86,7 @@
 }
 
 .section--environment {
-    background-image: linear-gradient(to bottom, var(--colour-background-light), var(--colour-background-dark), #efefef), url(../../images/Rainforest.jpg);
+    background-image: linear-gradient(to bottom,#efefef, var(--colour-background-light), var(--colour-background-dark), #efefef), url(../../images/Rainforest.jpg);
     background-size: cover;
     background-position: bottom;
 }
