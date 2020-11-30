@@ -5,77 +5,75 @@
 }
 
 .vision-container {
-    background-color: white;
     margin-left: auto;
     margin-right: auto;
+    width: 85vw;
     max-width: 140rem;
-    box-shadow: 0px 5px #DDD;
-    border: 2px solid #DDD;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .vision-page-header {
     background-color: white;
+    box-shadow: 0px 5px #DDD;
+    border: 2px solid #DDD;
+    border-radius: 25px;
+    width: 85vw;
     max-width: 140rem;
     margin: 0 auto 2rem auto;
     padding: 0;
+}
+
+.vision-content {
+    flex-basis: 100%;    
+    box-sizing: border-box;
+    background-color: white;
+    margin-bottom: 3rem;
+    border-radius: 25px;
 }
 
 .vision-page-header h1 {
     padding: 3rem 3rem;
 }
 
-.vision-container h2, p {
-    padding: 2rem 3rem 0 3rem;
-    width: 85%;
-}
-
-.vision-part-one {
-    flex-basis: 100%;    
-    box-sizing: border-box;
-}
-
-.vision-images {
-    flex-basis: 50%;
-    box-sizing: border-box;
+.vision-container h2 {
     position: relative;
 }
 
-.pollution {
+.vision-container h2 {
+    padding: 2rem 3rem 3rem 3rem;
+    width: 100%;
+}
+
+.vision-container p {
+    padding: 2rem 3rem 3rem 3rem;
+    width: 80%;
+}
+
+.pollution-img {
     padding: 5rem 3rem 3rem 4rem;
     float: right;
 }
 
-.pollution img {
+.pollution-img img {
     border-radius: 10px;
 }
 
-.vision-part-two {
-    flex-basis: 75%;
-    box-sizing: border-box;
-}
-
-.vision-part-three {
-    flex-basis: 75%;
-    box-sizing: border-box;
-}
-
 @media (max-width: 900px){
-    .pollution img{
+    .pollution-img img{
         width: 370px;
     }
 }
 
 @media (max-width: 600px){
-    .pollution {
+    .pollution-img {
         float: none;
         margin:auto;
         text-align: center;
     }
 
-    .pollution img{
+    .pollution-img img{
         width: 80vw;
     }
 
