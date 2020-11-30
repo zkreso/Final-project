@@ -41,7 +41,7 @@
 /* 4.2 Main (of landing page) */
 
 .left-grid-column {
-    margin: 0 5rem;
+    margin: 2rem 5rem;
 }
 
 .climate-goal {
@@ -56,13 +56,7 @@
     left: -99rem;
 }
 
-.main-colour-mixin {
-    background-color: var(--colour-secondary);
-}
-
 .main-landingpage {
-    /*background-color: var(--colour-secondary-light);*/
-    background-image: linear-gradient(to bottom, var(--colour-secondary-light), var(--colour-background));
     margin-top: -50vh;
     padding-top: 50vh;    
 }
@@ -75,10 +69,14 @@
     grid-template-columns: 1fr 3fr 1fr;
 }
 
+.mainContent p {
+    color: var(--colour-secondary);
+}
+
 .section--styling {
     margin: 2rem auto;
     max-width: 200rem;
-    background-color: #EFEFEF;
+    background-color: #fff;
     border-radius: 2.5rem;
     box-shadow: 0 .5rem #DDD;
     border: .2rem solid #DDD;

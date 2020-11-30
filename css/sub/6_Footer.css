@@ -12,7 +12,8 @@
     text-decoration: none;
     background-color: #efefef;
     text-transform: uppercase;
-    letter-spacing: 1rem;
+    letter-spacing: .5rem;
+    font-weight: 600;
     color: var(--colour-secondary);
     margin: 3rem 0;
     padding: 1rem 3rem;
