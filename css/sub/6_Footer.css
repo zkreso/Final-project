@@ -2,13 +2,19 @@
     text-align: center;
     display: block;
     height: 10rem;
+    background-image: linear-gradient(to top, var(--colour-secondary), var(--colour-primary)); 
+    /*var(--colour-secondary);*/
+    
 }
 
 .sources__btn:link, .sources__btn:visited {
     font-size: 1.6rem;
     text-decoration: none;
-    background-color: #fff;
-    color: black;
+    background-color: #efefef;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    font-weight: 600;
+    color: var(--colour-secondary);
     margin: 3rem 0;
     padding: 1rem 3rem;
     display: inline-block;
