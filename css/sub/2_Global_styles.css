@@ -11,6 +11,19 @@ h1 {
 
 }
 
+/* 3.2 Underline decoration for headers */
+.pynt:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 2ch;
+    height: 0.8rem;
+    background-color: var(--accent-colour);
+    border-radius: 50rem;
+}
+
+
 h2 {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;

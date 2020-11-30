@@ -6,6 +6,10 @@
     font-size: 1.8rem;
     border-bottom: .1rem solid #D1D1D1;
     text-align: center;
+    background-color: #EFEFEF;
+    position: fixed;
+    z-index: 99;
+    top: 0;
 }
 
 .nav ul {
@@ -14,6 +18,7 @@
     padding: 0;
     margin: 0;
     align-items: center;
+    justify-content: flex-start;
 }
 
 .nav ul li{
@@ -28,7 +33,7 @@
 
 .nav ul li a:not(.logo) {
     color: #4F4F4F;
-    padding: 1.6rem 6.4rem 1.6rem 1.6rem;
+    padding: 1.6rem 3.2rem 1.6rem 3.2rem;
 }
 
 .nav ul li a:hover:not(.logo) {
@@ -41,9 +46,9 @@
     content: "";
     position: absolute;
     bottom: 0;
-    left: 1.6rem;
-    height: .3rem;
-    width: 25%;
+    left: 25%;
+    right: 25%;
+    height: .5rem;
     background: var(--accent-colour);
 }
 /* Slightly darker text on current link */
@@ -57,21 +62,9 @@
     font-size: 2.6rem;
     letter-spacing: -0.04em;
     font-weight: normal;
-    padding-left: 1.6rem;
-    padding-right: 6.4rem;
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
     color: black;
-}
-
-/* 3.2 Underline decoration for headers */
-.pynt:after {
-    position: absolute;
-    content: "";
-    left: 0;
-    bottom: 0;
-    width: 2ch;
-    height: 0.8rem;
-    background-color: var(--accent-colour);
-    border-radius: 50rem;
 }
 
 /* 3.3 Jump to main content button */
@@ -89,4 +82,28 @@
     margin-bottom: 1.6rem;
     display: inline-block;
     position: static;
+    border: 5px solid darkred;
+    border-top: none;
+}
+
+@media only screen and (max-width: 500px) {
+    .nav ul {
+        flex-wrap: wrap;
+    }
+
+    .nav ul li:nth-child(n+2) {
+        flex-grow: 1;
+    }
+
+    .nav ul li a:not(.logo) {
+        padding: 1.6rem 1.6rem 1.6rem 1.6rem;
+    }
+
+    .logo {
+        flex-shrink: 0;
+        width: 100vw;
+        padding: 0;
+        font-size: 2rem;
+        border-bottom: 1px solid #D1D1D1;
+    }
 }
