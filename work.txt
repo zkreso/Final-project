@@ -2,7 +2,7 @@ Zlatko:
 
 Navbar
 linje til navbar
-Read more
+Read more button
 styling vision
 
 Isak:
@@ -12,12 +12,16 @@ skyggen
 tilhørende
 eksperimenter med marg landing
 halver avstand mellom divs
+alt tekst
+
+siste pri: link til un bærekraftmål
 
 Øystein:
 
 tekst app-pitch
 tekstansvarlig
 linjeskift vision
-sjekk sup
 avstand footer sources
 merge divs sources
+
+siste pri: sjekk sup
