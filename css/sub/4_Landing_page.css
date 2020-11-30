@@ -32,8 +32,6 @@
     border: .4rem solid #CCC;
 }
 
-
-
 /* 4.2 Main (of landing page) */
 
 .left-grid-column {
@@ -83,8 +81,9 @@
 }
 
 .section--environment {
-    background-image: url(../../images/Rainforest.jpg);
+    background-image: linear-gradient(to bottom, var(--colour-background-light), var(--colour-background-dark), #efefef), url(../../images/Rainforest.jpg);
     background-size: cover;
+    background-position: bottom;
 }
 
 .minimized {
