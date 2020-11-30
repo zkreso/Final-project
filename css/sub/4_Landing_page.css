@@ -72,7 +72,7 @@
     color: var(--colour-secondary);
 }
 
-.section--styling {
+.section-styling {
     margin: 2rem auto;
     background-color: #fff;
     border-radius: 2.5rem;
@@ -80,6 +80,11 @@
     border: .2rem solid #DDD;
     padding: 2rem 4rem;
     margin-bottom: 15rem;
+}
+
+.section--environment {
+    background-image: url(../../images/Rainforest.jpg);
+    background-size: cover;
 }
 
 .minimized {
@@ -101,11 +106,11 @@
 
 .btn--main:link, .btn--main:visited {
     color: #fff;
-    background-color: var(--colour-button);
+    background-color: var(--colour-button-light);
 }
 
 .btn--main:hover, .btn--main:active {
-    background-color: var(--colour-secondary);
+    background-color: var(--colour-button-dark);
     animation: fillBtn .5s;
 }
 
@@ -124,10 +129,10 @@
 
 @keyframes fillBtn {
     0% {
-        background-color: var(--colour-button);
+        background-color: var(--colour-button-light);
     }
     100% {
-        background-color: var(--colour-secondary);
+        background-color: var(--colour-button-dark);
     }
 }
 
