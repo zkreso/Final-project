@@ -19,7 +19,7 @@
 
 .header-container {
     width: 100%;
-    background-color: red;
+    background-image: linear-gradient(to top, #ddd, #eee);
     padding-top: 15rem;
     margin-top: -15rem;
     padding-bottom: 35rem;
