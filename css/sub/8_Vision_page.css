@@ -1,35 +1,20 @@
+/* 8.1 Main */
+
 .main-vision-page {
     margin: 0;
     padding: 0;
     width: 100%;
 }
 
-.vision-container {
-    margin-left: auto;
-    margin-right: auto;
-    width: 85vw;
-    max-width: 140rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+/* 8.1 Header */
 
 .vision-page-header {
+    max-width: 140rem;
+    margin: 0 auto 3rem auto;
+    padding: 0;
     background-color: white;
     box-shadow: 0px 5px #DDD;
     border: 2px solid #DDD;
-    border-radius: 25px;
-    width: 85vw;
-    max-width: 140rem;
-    margin: 0 auto 2rem auto;
-    padding: 0;
-}
-
-.vision-content {
-    flex-basis: 100%;    
-    box-sizing: border-box;
-    background-color: white;
-    margin-bottom: 3rem;
     border-radius: 25px;
 }
 
@@ -37,22 +22,38 @@
     padding: 3rem 3rem;
 }
 
-.vision-container h2 {
-    position: relative;
+/* 8.2 Container for squares */
+
+.vision-container {
+    max-width: 140rem;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.vision-container h2 {
-    padding: 2rem 3rem 3rem 3rem;
-    width: 100%;
+/* 8.3 Boxes/sections in container */
+
+.vision-content {
+    flex-basis: 100%;    
+    box-sizing: border-box;
+    background-color: white;
+    margin-bottom: 3rem;
+    border-radius: 25px;
+    box-shadow: 0px 5px #DDD;
+    border: 2px solid #DDD;
 }
 
-.vision-container p {
-    padding: 2rem 3rem 3rem 3rem;
-    width: 80%;
+.vision-content > * {
+    padding: 0;
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
+
+/* 8.4 Images */
 
 .pollution-img {
-    padding: 5rem 3rem 3rem 4rem;
+    padding: 1rem 3rem 3rem 4rem;
     float: right;
 }
 
@@ -60,28 +61,54 @@
     border-radius: 10px;
 }
 
-@media (max-width: 900px){
+.vision-content h2 {
+    padding-bottom: 3rem;
+}
+
+/* 8.5 Responsive */
+
+@media (max-width: 1000px){
     .pollution-img img{
-        width: 370px;
+        width: 420px;
     }
 }
 
-@media (max-width: 600px){
+@media (max-width: 900px){
+    .vision-content, .vision-page-header {
+        border: none;
+        border-radius: 0px;
+    }
+}
+
+@media (max-width: 820px){
+    .pollution-img img{
+        width: 350px;
+    }
+}
+
+@media (max-width: 700px){
     .pollution-img {
         float: none;
-        margin:auto;
+        margin: auto;
         text-align: center;
     }
 
     .pollution-img img{
-        width: 80vw;
+        width: 68vw;
+        padding: 0 0 0 0;
     }
 
-    .vision-container h1, h2 {
+    .vision-page-header {
+        text-align: center;
+        margin: 2rem auto 2rem auto;
+    }
+
+    .vision-content h2 {
         text-align: center;
     }
 
-    .vision-part-two, .vision-part-three {
-        flex-basis: 100%;
+    .vision-content p {
+        width: 100%;
+        box-sizing: border-box;
     }
 }
