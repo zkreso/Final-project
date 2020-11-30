@@ -7,10 +7,12 @@
     padding-bottom: 6rem;
     padding-right: 6rem;
     padding-left: 6rem;
+    line-height: 7rem;
 }
 
 .header__p {
     font-size: 3rem;
+    letter-spacing: .1rem;
 }
 
 .hero {
@@ -19,7 +21,7 @@
 
 .header-container {
     width: 100%;
-    background-color: red;
+    background-image: linear-gradient(to top, #ddd, #eee);
     padding-top: 15rem;
     margin-top: -15rem;
     padding-bottom: 35rem;
@@ -42,7 +44,59 @@
     border-radius: 4.8rem;
 }
 
+/* App Showreel */
 
+#showreel-container {
+    position: relative;
+}
+
+.showreel__picture {
+    position: absolute;
+    left: 50%;
+    top: 2rem;
+    transform: translateX(-50%);
+    background-color: var(--colour-secondary);
+}
+
+#empty {
+    position: relative;
+    opacity: 0;
+}
+
+#picture1 {
+    animation: showreel 17.5s;
+    animation-iteration-count: infinite;
+    animation-delay: 0;
+    z-index: 14;
+}
+
+#picture2 {
+    animation: showreel 17.5s;
+    animation-iteration-count: infinite;
+    animation-delay: 3.5s;
+    z-index: 13;
+}
+
+#picture3 {
+    animation: showreel 17.5s;
+    animation-iteration-count: infinite;
+    animation-delay: 7s;
+    z-index: 12;
+}
+
+#picture4 {
+    animation: showreel 17.5s;
+    animation-iteration-count: infinite;
+    animation-delay: 10.5s;
+    z-index: 11;
+}
+
+#picture5 {
+    animation: showreel 17.5s;
+    animation-iteration-count: infinite;
+    animation-delay: 14s;
+    z-index: 10;
+}
 
 /* 4.2 Main (of landing page) */
 
@@ -77,7 +131,7 @@
     color: var(--colour-secondary);
 }
 
-.section--styling {
+.section-styling {
     margin: 2rem auto;
     background-color: #fff;
     border-radius: 2.5rem;
@@ -85,6 +139,12 @@
     border: .2rem solid #DDD;
     padding: 2rem 4rem;
     margin-bottom: 15rem;
+}
+
+.section--environment {
+    background-image: linear-gradient(to bottom,#efefef, var(--colour-background-light), var(--colour-background-dark), #efefef), url(../../images/Rainforest.jpg);
+    background-size: cover;
+    background-position: bottom;
 }
 
 .minimized {
@@ -102,6 +162,56 @@
     box-shadow: 0 .2rem #DDD;
     border: .1rem solid #DDD;
     
+}
+
+.btn--main:link, .btn--main:visited {
+    color: #fff;
+    background-color: var(--colour-button-light);
+}
+
+.btn--main:hover, .btn--main:active {
+    background-color: var(--colour-button-dark);
+    animation: fillBtn .5s;
+}
+
+.arrow {
+    border: solid #fff;
+    border-width: 0 .3rem .3rem 0;
+    display: inline-block;
+    padding: .3rem;
+}
+
+.right {
+    transform: rotate(-45deg);
+}
+
+/* Animations */
+
+@keyframes fillBtn {
+    0% {
+        background-color: var(--colour-button-light);
+    }
+    100% {
+        background-color: var(--colour-button-dark);
+    }
+}
+
+@keyframes showreel {
+    0% {
+        opacity: 1;
+    }
+    17% {
+        opacity: 1;
+    }   
+    23% {
+        opacity: 0;
+    }
+    94% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 /* Media Queries */
