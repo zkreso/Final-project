@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing page</title>
-    <link rel="stylesheet" type="text/css" href="css/links.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Open+Sans:ital,wght@0,400;0,600;1,300&family=Roboto:wght@700;900&display=swap" rel="stylesheet">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JINX</title>
+        <meta name="author" content="Øystein Døskeland, Zlatko Kreso, Isak Heim">
+        <meta name="description" content="JINX transforms the topic of climate change into something tangible for the user.">
+        <link rel="icon" href="images/Icon.ico" type="image/x-icon" alt="Image of JINX logo">
+        <link rel="stylesheet" type="text/css" href="css/links.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Open+Sans:ital,wght@0,400;0,600;1,300&family=Roboto:wght@700;900&display=swap" rel="stylesheet">
+    </head>
 <body>
 <nav class="nav">
     <a class="jump-to-main" href="#main-content__vision">Jump to main content</a>
@@ -20,17 +23,16 @@
     </ul>
 </nav>
 
-<main class="main-landingpage" id="main-content__vision">
-    <div class="mainContent">
-        <div>
-            <!-- Left Grid column -->
-        </div>
-        <div>
-            <!-- Center Grid Column -->
-            <h1 class="pynt">Our Vision</h1>
-            <article>
-                <section>
-                    <h2>The Climate Challenge</h2>
+<main class="main-vision-page" id="main-content__vision">
+            <div class="vision-page-header">
+                <h1>Our Vision</h1>
+            </div>
+            <article class="vision-container">
+                <section class="vision-content">
+                    <h2 class="pynt">The Climate Challenge</h2>
+                    <div class="pollution-img">
+                        <img src="images/Pollution.jpg" width="500px" alt="">
+                    </div>
                     <p>
                         It is well known that the world is up for a huge task considering 
                         climate change. The UN´s sustainable development goal number 13 
@@ -52,11 +54,11 @@
                         issues following climate extremes like droughts in some parts of the world <sup>2</sup>.
                         Therefore, we think that it should be in every country, institution and company´s 
                         interest to engage in – and dear to invest in – solutions that strive to cope with the 
-                        climate cricis in one way or another.
+                        climate crisis in one way or another.
                     </p>
                 </section>
-                <section>
-                    <h2>Engaging locally and globally</h2>
+                <section class="vision-content">
+                    <h2 class="pynt">Engaging locally and globally</h2>
                     <p>
                         Obviously, it can be quite overwhelming for the everyday person to try 
                         and deal with all of the mentioned above. One of the subgoals of our chosen UN sustainability goal is to strenghten
@@ -72,8 +74,8 @@
                         and to grow. 
                     </p>
                 </section>
-                <section>
-                    <h2>Looking forward</h2>
+                <section class="vision-content">
+                    <h2 class="pynt">Looking forward</h2>
                     <p>
                         With JINX, we want to transform the complex – and often quite overwhelming –
                         topic of climate change, into something manageble and entertaining for the 
@@ -85,11 +87,6 @@
                     </p>
                 </section>
             </article> 
-        </div>
-        <div>
-            <!-- Right Grid column -->
-        </div>
-    </div>
 </main>
 <footer class="centered__footer">
     <a class="sources__btn" href="sources.html">Sources</a>

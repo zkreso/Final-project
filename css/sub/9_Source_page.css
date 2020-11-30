@@ -1,0 +1,44 @@
+.main-sources-page {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.sources-container {
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85vw;
+    max-width: 140rem;
+    box-shadow: 0px 5px #DDD;
+    border: 2px solid #DDD;
+    margin-bottom: 3rem;
+    border-radius: 25px;
+}
+
+.sources-page-header {
+    background-color: white;
+    width: 85vw;
+    box-shadow: 0px 5px #DDD;
+    border: 2px solid #DDD;
+    border-radius: 25px;
+    max-width: 140rem;
+    margin: 0 auto 2rem auto;
+    padding: 0;
+}
+
+.sources-page-header h1 {
+    padding: 3rem 3rem;
+}
+
+.reference-list {
+    margin: 5rem 0;
+    width: 80%;
+}
+
+.reference-list li {
+    font-size: 2rem;
+    line-height: 1.7em;
+    letter-spacing: -0.02em;
+    margin: 3rem 0;
+}
