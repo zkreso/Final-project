@@ -1,0 +1,33 @@
+.centered__footer {
+    text-align: center;
+    display: block;
+    height: 10rem;
+    background-image: linear-gradient(to top, var(--colour-secondary), var(--colour-primary)); 
+    /*var(--colour-secondary);*/
+    
+}
+
+.sources__btn:link, .sources__btn:visited {
+    font-size: 1.6rem;
+    text-decoration: none;
+    background-color: #efefef;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    font-weight: 600;
+    color: var(--colour-secondary);
+    margin: 3rem 0;
+    padding: 1rem 3rem;
+    display: inline-block;
+    border-radius: 10rem;
+    
+}
+
+.sources__btn:hover {
+    transform: translateY(-.3rem);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+}
+
+.sources__btn:active {
+    transform: translateY(-.1rem);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+}

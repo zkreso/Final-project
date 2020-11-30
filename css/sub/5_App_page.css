@@ -1,0 +1,155 @@
+/* 5.0 APP PAGE COMPONENTS */
+
+/* 5.1 Main */
+.main-app-page {
+    width: 100%;
+}
+
+/* 5.2 Container for squares */
+
+.main-grid-container {
+    margin: 2rem auto;
+    max-width: 140rem;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0px 5px #DDD;
+    border: 2px solid #DDD;
+}
+
+/* 5.3 Left square */
+
+.grid-col-left {
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+}
+
+.preview-image {
+    display: block;
+    margin: auto;
+    box-shadow: 5px 5px 20px grey;
+    border-radius: 15px;
+    width: 250px;
+    max-width: 90vw;
+}
+
+/* 5.4 Right square */
+
+.grid-col-right {
+    position: relative;
+    padding-top: 10rem;
+    padding-bottom: 10rem;   
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.grid-col-right > * {
+    max-width: 65rem;
+    margin: 0 1.6rem;
+}
+
+
+/* 5.4.1 Progress graphic container */
+
+.progress-graphic {     
+    height: 2rem;
+    width: 30%;
+    max-width: 48rem;
+    margin: 0;
+
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 12%;
+    display: flex;
+
+    align-items: center;
+}
+
+/* 5.4.2 Progress graphic indicators and line */
+
+.progress-indicator {
+    height: 100%;
+    flex-basis: 2rem;
+    flex-grow: 0;
+    border-radius: 50%;
+    border: .3rem solid black;
+    box-sizing: border-box;
+}
+
+.full {
+    background-color: black;
+}
+
+.progress-line {
+    height: .3rem;
+    background-color: black;
+    flex-grow: 1;
+}
+
+/* 5.5 Bottom box */
+
+.app-page-bottom-content {
+    max-width: 140rem;
+    margin: auto;
+}
+
+/* 5.6 Summary */
+
+.app--page--summary {
+    margin: auto;
+    max-width: 140rem;
+    background-color: white;
+}
+
+.app--page--summary > * {
+    padding: 0;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.app--page--summary h1 {
+    padding-bottom: 2rem;
+}
+
+/* 5.7 Responsive */
+
+@media only screen and (max-width: 900px) {
+    
+    .main-grid-container {
+        grid-template-columns: 1fr;
+        border: none;
+        border-radius: 0px;
+    }
+
+    .grid-col-left {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    .preview-image {
+        max-width: 60%;
+    }
+
+    .grid-col-right {
+        padding-top: 0rem;
+        padding-bottom: 12rem;   
+    }
+
+    .progress-graphic {     
+        width: 60%;
+        bottom: 8%;
+    }
+
+    .grid-col-right h2 {
+        text-align: center;
+        font-size: 4rem;
+    }
+
+    .grid-col-right > p {
+        margin: 0 3rem;
+    }
+    
+}
