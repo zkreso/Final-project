@@ -1,16 +1,19 @@
 /* 4.0 LANDING PAGE COMPONENTS */
 
 /* 4.1 Hero section */
+
 .header__h1 {
     max-width: 30ch;
     padding-top: 8rem;
     padding-bottom: 6rem;
     padding-right: 6rem;
     padding-left: 6rem;
+    line-height: 7rem;
 }
 
 .header__p {
     font-size: 3rem;
+    letter-spacing: .1rem;
 }
 
 .hero {
@@ -19,7 +22,7 @@
 
 .header-container {
     width: 100%;
-    background-color: red;
+    background-image: linear-gradient(to top, #ddd, #eee);
     padding-top: 15rem;
     margin-top: -15rem;
     padding-bottom: 35rem;
@@ -37,12 +40,66 @@
     width: 20%;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 0 8rem 6rem rgba(0, 0, 0, 0.2);
     z-index: 1;
     border-radius: 4.8rem;
 }
 
+/* App Showreel */
 
+#showreel-container {
+    position: relative;
+}
+
+.showreel__picture {
+    position: absolute;
+    left: 50%;
+    top: 2rem;
+    transform: translateX(-50%);
+    background-color: #014c51;
+}
+
+#empty {
+    opacity: 0;
+}
+
+#shadow {
+    box-shadow: 0 5rem 4rem rgba(0, 0, 0, 0.2);
+}
+
+#picture1 {
+    animation: showreel 17.5s;
+    animation-iteration-count: infinite;
+    animation-delay: 0;
+    z-index: 14;
+}
+
+#picture2 {
+    animation: showreel 17.5s;
+    animation-iteration-count: infinite;
+    animation-delay: 3.5s;
+    z-index: 13;
+}
+
+#picture3 {
+    animation: showreel 17.5s;
+    animation-iteration-count: infinite;
+    animation-delay: 7s;
+    z-index: 12;
+}
+
+#picture4 {
+    animation: showreel 17.5s;
+    animation-iteration-count: infinite;
+    animation-delay: 10.5s;
+    z-index: 11;
+}
+
+#picture5 {
+    animation: showreel 17.5s;
+    animation-iteration-count: infinite;
+    animation-delay: 14s;
+    z-index: 10;
+}
 
 /* 4.2 Main (of landing page) */
 
@@ -73,18 +130,22 @@
     grid-template-columns: 1fr 6fr 1fr;
 }
 
-.mainContent p {
-    color: var(--colour-secondary);
-}
-
-.section--styling {
+.section-styling {
     margin: 2rem auto;
     background-color: #fff;
+    /*
     border-radius: 2.5rem;
-    box-shadow: 0 .5rem #DDD;
-    border: .2rem solid #DDD;
+    box-shadow: 1rem 1rem 3rem rgba(0,0,0,0.2);;
+    border: .5rem solid #477D81;
+    */
     padding: 2rem 4rem;
-    margin-bottom: 15rem;
+    margin-bottom: 10rem;
+}
+
+.section--environment {
+    background-image: linear-gradient(to bottom,#efefef, #014c5146, #014c517c, #efefef), url(../../images/Rainforest.jpg);
+    background-size: cover;
+    background-position: bottom;
 }
 
 .minimized {
@@ -104,6 +165,58 @@
     
 }
 
+
+.btn--main:link, .btn--main:visited {
+    color: #fff;
+    background-color: #014c51b9;
+    position: relative;
+}
+
+.btn--main:hover, .btn--main:active {
+    background-color: #014c51e5;
+    animation: fillBtn .5s;
+}
+
+.arrow {
+    border: solid #fff;
+    border-width: 0 .3rem .3rem 0;
+    display: inline-block;
+    padding: .3rem;
+}
+
+.right {
+    transform: rotate(-45deg);
+}
+
+/* Animations */
+
+@keyframes fillBtn {
+    0% {
+        background-color: #014c51b9;
+    }
+    100% {
+        background-color: #014c51e5;
+    }
+}
+
+@keyframes showreel {
+    0% {
+        opacity: 1;
+    }
+    17% {
+        opacity: 1;
+    }   
+    23% {
+        opacity: 0;
+    }
+    94% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 /* Media Queries */
 
 @media (max-width: 1450px) {
@@ -111,6 +224,7 @@
 
     .heroImage {
         border-radius: 3.75rem;
+        width: 25%;
     }
 
     .climate-goal-hidden {
@@ -134,6 +248,7 @@
 
     .heroImage {
         border-radius: 3rem;
+        width: 30%;
     }
 
     .mainContent {
@@ -151,12 +266,22 @@
 
 @media (max-width: 900px) {
 
-    .section--styling {
+    .section-styling {
         padding: 2rem 3rem;
+        margin-bottom: 7.5rem;
     }
 
     .heroImage {
         border-radius: 2rem;
+    }
+
+    #shadow {
+        box-shadow: 0 3rem 4rem rgba(0, 0, 0, 0.2);
+    }
+
+    .header-container {
+        padding-bottom: 28rem;
+        margin-bottom: -28rem;
     }
 
     .mainContent {
@@ -170,14 +295,16 @@
     .header__p {
         font-size: 2rem;
     }
+
+    .button-center-wrapper {
+        text-align: center;
+    }
 }
 
 @media (max-width: 600px) {
-    
 
     .mainContent {
-    display: block;
-    margin: 0 3rem;
+    grid-template-columns: 1fr 20fr 1fr;
     }
 
     .climate-goal-hidden {position: static;}
@@ -187,14 +314,39 @@
         left: -99rem;
     }
 
+    .header-container {
+        padding-bottom: 25rem;
+        margin-bottom: -25rem;
+    }
+
+
     .heroImage {
         border-radius: 1.5rem;
+        width: 35%;
     }
+
+    .header__h1 {
+        line-height: 4rem;
+    }
+
+    
 }
 
 @media (max-width: 400px) {
 
+    .section-styling {
+        margin-bottom: 5rem;
+    }
+
     .heroImage {
         border-radius: 1rem;
+        width: 45%;
     }
+
+    .header-container {
+        padding-bottom: 22rem;
+        margin-bottom: -22rem;
+    }
+
+    
 }

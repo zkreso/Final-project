@@ -8,16 +8,6 @@
 
 /* 9.2 Header */
 
-.sources-page-header {
-    max-width: 140rem;
-    margin: 0 auto 3rem auto;
-    padding: 0;
-    background-color: white;
-    box-shadow: 0px 5px #DDD;
-    border: 2px solid #DDD;
-    border-radius: 25px;
-}
-
 .sources-page-header h1 {
     padding: 3rem 3rem;
 }
@@ -26,17 +16,19 @@
 
 .sources-container {
     margin: auto;
-    max-width: 140rem;
+    max-width: 105rem;
+    margin-bottom: 3rem;
     background-color: white;
     box-shadow: 0px 5px #DDD;
     border: 2px solid #DDD;
-    border-radius: 25px;
+    border-radius: 12px;
 }
 
 /* 9.4 Reference-list */
 
 .reference-list {
     padding: 0 3rem 0 5rem;
+    max-width: 82%;
 }
 
 .link-break {
@@ -50,11 +42,18 @@
     margin: 3rem 0;
 }
 
+.reference-list a {
+    color: inherit;
+}
+
+.reference-list a:hover {
+    background-color: #efefef;
+}
+
 /* 9.5 Responsive */
 
-@media (max-width: 900px){
-    .sources-page-header, .sources-container {
-        border: none;
-        border-radius: 0px;
+@media (max-width: 700px) {
+    .reference-list {
+        max-width: none;
     }
 }

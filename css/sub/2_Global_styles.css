@@ -11,14 +11,19 @@ h1 {
 }
 
 /* 3.2 Underline decoration for headers */
+
+.pynt {
+    position: relative;
+}
+
 .pynt:after {
     position: absolute;
     content: "";
-    left: 0;
+    left: 8ch;
     bottom: 0;
     width: 2ch;
     height: 0.8rem;
-    background-color: var(--accent-colour);
+    background-color: #014c51;
     border-radius: 50rem;
 }
 
@@ -70,7 +75,6 @@ p {
 
 @media (max-width: 600px) {
     
-    /* skal tilsvare 16px*/
     :root {
         font-size: 50%;
     }

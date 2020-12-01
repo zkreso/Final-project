@@ -13,7 +13,7 @@
     display: grid;
     grid-template-columns: 2fr 3fr;
     background-color: white;
-    border-radius: 25px;
+    border-radius: 12px;
     box-shadow: 0px 5px #DDD;
     border: 2px solid #DDD;
 }
@@ -30,8 +30,7 @@
     margin: auto;
     box-shadow: 5px 5px 20px grey;
     border-radius: 15px;
-    width: 250px;
-    max-width: 90vw;
+    width: 60%;
 }
 
 /* 5.4 Right square */
@@ -48,6 +47,10 @@
 .grid-col-right > * {
     max-width: 65rem;
     margin: 0 1.6rem;
+}
+
+.grid-col-right > h2 {
+    font-size: 6rem;
 }
 
 
@@ -102,6 +105,9 @@
     margin: auto;
     max-width: 140rem;
     background-color: white;
+    box-shadow: 0px 5px #DDD;
+    border: 2px solid #DDD;
+    border-radius: 12px;
 }
 
 .app--page--summary > * {
@@ -120,8 +126,6 @@
     
     .main-grid-container {
         grid-template-columns: 1fr;
-        border: none;
-        border-radius: 0px;
     }
 
     .grid-col-left {
@@ -130,7 +134,7 @@
     }
 
     .preview-image {
-        max-width: 60%;
+        max-width: 50%;
     }
 
     .grid-col-right {
@@ -151,5 +155,61 @@
     .grid-col-right > p {
         margin: 0 3rem;
     }
+
+    .app--page--summary h1 {
+        font-size: 4rem;
+    }
+
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /* IE10+ CSS */
+    .main-grid-container {
+        display: flex;
+        background-color: white;
+        border-radius: 25px;
+        box-shadow: 0px 5px #DDD;
+        border: 2px solid #DDD;
+    }
+
+    .grid-col-right {   
+        display: flex;
+        flex-direction: column;
+        flex-basis: 50%;
+        flex-grow: 0;
+    }
+
+    .progress-graphic {     
+        max-width: auto;
+        margin: 0;
     
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        bottom: 12%;
+        display: flex;
+    
+        align-items: center;
+    }
+ }
+
+ @media only screen and (max-width: 900px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /* IE10+ CSS on small resolutions */
+    .main-grid-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .grid-col-left {
+        flex-basis: 50%;
+        flex-shrink: 0;
+        flex-grow: 1;
+    }
+
+    .grid-col-right {
+        flex-basis: 300px;   
+        flex-grow: 1;
+        flex-shrink: 0;
+    }
+
 }
