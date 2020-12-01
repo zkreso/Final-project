@@ -1,0 +1,17 @@
+/* 6.0 Footer */
+
+.centered__footer {
+    text-align: center;
+    display: block;
+    height: 10rem;
+    background-image: linear-gradient(to top, #014c51, #003539); 
+}
+
+.btn--sources:link, .btn--sources:visited {
+    background-color: #fff;
+    color: #014c51;
+}
+
+footer .btn {
+    margin-bottom: 3rem;
+}

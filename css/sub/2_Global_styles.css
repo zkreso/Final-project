@@ -1,0 +1,116 @@
+/* 2.0 Global styles */
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 6rem;
+    line-height: 1em;
+    margin: 0;
+    padding-top: 2em;
+
+}
+
+sup { vertical-align: top;
+    position: relative;
+    top: -0.5em;
+}
+
+.body--background-colour {
+    background-image: linear-gradient(to right bottom,#efefef, rgba(1, 75, 81, 0.40));
+}
+
+/* 2.1 Underline decoration for headers */
+
+.pynt {
+    position: relative;
+}
+
+.pynt:after {
+    position: absolute;
+    content: "";
+    left: 8ch;
+    bottom: 0;
+    width: 2ch;
+    height: 0.8rem;
+    background-color: #014c51;
+    border-radius: 50rem;
+}
+
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 1em;
+    margin: 0;
+    padding-bottom: 0.5em;
+    position: relative;
+    color: #010101;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 1em;
+}
+
+p {
+    font-size: 2rem;
+    line-height: 1.7em;
+    letter-spacing: -0.02em;
+}
+
+.centered {
+    text-align: center;
+    margin: auto;
+}
+
+/* 2.2 Buttons */
+
+.btn:hover {
+    transform: translateY(-.3rem);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+    margin-bottom: 0rem;
+}
+
+.btn:active {
+    transform: translateY(-.1rem);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+}
+
+.btn:link, .btn:visited {
+    font-size: 1.6rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    font-weight: 600;
+    margin-top: 3rem;
+    padding: 1rem 3rem;
+    display: inline-block;
+    border-radius: 10rem;
+}
+
+
+/* Standard padding for divs/sections containing text
+ Selects the first element in the div and adds padding to top */
+.standard-padding > *:first-child {
+    padding-top: 3rem;
+}
+
+/* Selects the last element in the div and adds padding to bottom */
+.standard-padding > *:last-child {
+    padding-bottom: 3rem;
+}
+
+/*  MEDIA QUERY 
+Global styles on mobile */
+
+@media (max-width: 600px) {
+    
+    :root {
+        font-size: 50%;
+    }
+    
+}
+

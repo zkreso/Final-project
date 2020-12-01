@@ -1,0 +1,111 @@
+/* 3.0 GLOBAL COMPONENTS */
+/* 3.1 Navbar */
+
+.nav {
+    width: 100%;
+    font-size: 1.8rem;
+    text-align: center;
+    background-image: linear-gradient(to top, #014c51, #003539);
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    border-bottom: 0.3rem solid #efefef;
+}
+
+.nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.nav ul li{
+    font-weight: 600;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+.nav ul li a:not(.logo) {
+    color: #efefef;
+    padding: 1.6rem 3.2rem 1.6rem 3.2rem;
+}
+
+.nav ul li a:hover:not(.logo) {
+    text-decoration: underline;
+}
+
+/* 3.1.1 Current link styles */
+/* underline on current link */
+.currentPage:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    right: 25%;
+    height: .6rem;
+    background: #efefef;
+    border-radius: 10rem 10rem 0 0;
+}
+/* Slightly darker text on current link */
+.currentPage {
+    color: black;
+}
+
+/* 3.1.2 Logotype */
+.logo {
+    font-family: 'Carter One', cursive;
+    font-size: 2.6rem;
+    letter-spacing: -0.04em;
+    font-weight: normal;
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+    color: #efefef;
+}
+
+/* 3.3 Jump to main content button */
+.jump-to-main {
+    left: -99rem;
+    position: absolute;
+} 
+
+.jump-to-main:focus, .jump-to-main:active {
+    color: #014c51;
+    background-color: #efefef;
+    text-decoration: none;
+    padding: .8rem 2.4rem;
+    border-radius: 0 0 1.6rem 1.6rem;
+    margin-right: 1.6rem;
+    display: inline-block;
+    right: 2rem;
+    left: auto;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 500px) {
+    .nav ul {
+        flex-wrap: wrap;
+    }
+
+    .nav ul li:nth-child(n+2) {
+        flex-grow: 1;
+    }
+
+    .nav ul li a:not(.logo) {
+        padding: 1.6rem 1.6rem 1.6rem 1.6rem;
+    }
+
+    .logo {
+        flex-shrink: 0;
+        width: 100vw;
+        padding: 0;
+        font-size: 2rem;
+        border-bottom: 1px solid #618284;
+    }
+}

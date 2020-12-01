@@ -1,116 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The app</title>
-    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Open+Sans:ital,wght@0,400;0,600;1,300&family=Roboto:wght@700;900&display=swap" rel="stylesheet">
-</head>
-<body>
-<nav>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JINX</title>
+        <meta name="author" content="Øystein Døskeland, Zlatko Kreso, Isak Heim">
+        <meta name="description" content="JINX makes it easy for everybody to contribute both locally and globally in the fight against climate change.">
+        <link rel="icon" href="images/Logo.ico" type="image/x-icon" alt="JINX App">
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Open+Sans:ital,wght@0,400;0,600;1,300&family=Roboto:wght@700;900&display=swap" rel="stylesheet">
+    </head>
+<body class="body--background-colour">
+<nav class="nav">
+    <a class="jump-to-main" href="#main-content__app">Jump to main content</a>
     <ul>
-        <li>
-            <a href="index.html" class="logo">JINX</a>
-        </li>
-        <li>
-            <a href="index.html">Home</a>
-        </li>
-        <li>
-            <a href="#Challenge">Challenge</a>
-        </li>
-        <li>
-            <a href="#Solution">Solution</a>
-        </li>
-        <li>
-            <a href="app.html" class="currentPage">App</a>
-        </li>
+        <li><a href="index.html" class="logo">JINX</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="vision.html">Our Vision</a></li>
+        <li><a href="app.html" class="currentPage">App</a></li>
     </ul>
 </nav>
-<main class="main-app-page">
-    <div class="main-grid-container">
-        <div class="grid-col-left">
-            <img class="preview-image-step1" src="images/Group 4.png" alt="app preview">
-        </div>
-        <div class="grid-col-right">
-            <h2>Step 1</h2>
+<main class="main-app-page" id="main-content__app">
+    <article>
+        <div class="app--page--summary standard-padding">
+            <h1>How the app works</h1>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta aliquam nibh eu cursus. Nullam sit amet purus mi. Maecenas interdum leo felis, vel tincidunt sapien consectetur id. Mauris interdum imperdiet magna vitae sagittis. Curabitur vel justo lacus.
+                To become jinxed, the user has to install the app, and then come in to proximity with someone who has already completed the challenge. The challenges run for a limited duration. At the start of a new challenge, 100 randomly selected users are jinxed. 
             </p>
-            <div class="progress-graphic">
-                <div class="progress-indicator full"></div>
-                <div class="progress-line"></div>
-                <div class="progress-indicator"></div>
-                <div class="progress-line"></div>
-                <div class="progress-indicator"></div>
-                <div class="progress-line"></div>
-                <div class="progress-indicator"></div>
+        </div>
+        <section class="main-grid-container">
+            <div class="grid-col-left">
+                <img class="preview-image" src="images/Step1.png" alt="How step 1 would look like in the app">
             </div>
-        </div>
-    </div>
-    <div class="main-grid-container">
-        <div class="grid-col-left">
-            <img class="preview-image-step1" src="images/Group 4.png" alt="app preview">
-        </div>
-        <div class="grid-col-right">
-            <h2>Step 2</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta aliquam nibh eu cursus. Nullam sit amet purus mi. Maecenas interdum leo felis, vel tincidunt sapien consectetur id. Mauris interdum imperdiet magna vitae sagittis. Curabitur vel justo lacus.
-            </p>
-            <div class="progress-graphic">
-                <div class="progress-indicator full"></div>
-                <div class="progress-line"></div>
-                <div class="progress-indicator full"></div>
-                <div class="progress-line"></div>
-                <div class="progress-indicator"></div>
-                <div class="progress-line"></div>
-                <div class="progress-indicator"></div>
+            <div class="grid-col-right">
+                <h2>Step 1</h2>
+                <p>
+                    The user recieves a notification that they have been challenged, and the option to accept or decline the challenge. They are given information about the name of the challenge, its sponsor, the current prize pool and time remaining until the challenge is over. They are notified that their commitment fee will be locked in until they have completed the challenge.
+                </p>
+                <div class="progress-graphic">
+                    <div class="progress-indicator full"></div>
+                    <div class="progress-line"></div>
+                    <div class="progress-indicator"></div>
+                    <div class="progress-line"></div>
+                    <div class="progress-indicator"></div>
+                    <div class="progress-line"></div>
+                    <div class="progress-indicator"></div>
             </div>
-        </div>
-    </div>
-    <div class="main-grid-container">
-        <div class="grid-col-left">
-            <img class="preview-image-step1" src="images/Group 4.png" alt="app preview">
-        </div>
-        <div class="grid-col-right">
-            <h2>Step 3</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta aliquam nibh eu cursus. Nullam sit amet purus mi. Maecenas interdum leo felis, vel tincidunt sapien consectetur id. Mauris interdum imperdiet magna vitae sagittis. Curabitur vel justo lacus.
-            </p>
-            <div class="progress-graphic">
-                <div class="progress-indicator full"></div>
-                <div class="progress-line"></div>
-                <div class="progress-indicator full"></div>
-                <div class="progress-line"></div>
-                <div class="progress-indicator full"></div>
-                <div class="progress-line"></div>
-                <div class="progress-indicator"></div>
+        </section>
+        <section class="main-grid-container">
+            <div class="grid-col-left">
+                <img class="preview-image" src="images/Step2.png" alt="How step 2 would look like in the app">
             </div>
-        </div>
-    </div>
-    <div class="main-grid-container">
-        <div class="grid-col-left">
-            <img class="preview-image-step1" src="images/Group 4.png" alt="app preview">
-        </div>
-        <div class="grid-col-right">
-            <h2>Step 4</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta aliquam nibh eu cursus. Nullam sit amet purus mi. Maecenas interdum leo felis, vel tincidunt sapien consectetur id. Mauris interdum imperdiet magna vitae sagittis. Curabitur vel justo lacus.
-            </p>
-            <div class="progress-graphic">
-                <div class="progress-indicator full"></div>
-                <div class="progress-line"></div>
-                <div class="progress-indicator full"></div>
-                <div class="progress-line"></div>
-                <div class="progress-indicator full"></div>
-                <div class="progress-line"></div>
-                <div class="progress-indicator full"></div>
+            <div class="grid-col-right">
+                <h2>Step 2</h2>
+                <p>
+                    Once accepted, they will be asked to confirm that they understand that their commitment fee will be locked until they have completed a task, and that it will be lost and added to the prize pool if the task should not be completed in time. They are also given the deadline for the tasks (all of which have the same deadline). Once confirmed, they are given three different tasks to choose from.   
+                </p>
+                <div class="progress-graphic">
+                    <div class="progress-indicator full"></div>
+                    <div class="progress-line"></div>
+                    <div class="progress-indicator full"></div>
+                    <div class="progress-line"></div>
+                    <div class="progress-indicator"></div>
+                    <div class="progress-line"></div>
+                    <div class="progress-indicator"></div>
+                </div>
             </div>
-        </div>
-    </div>
+        </section>
+        <section class="main-grid-container">
+            <div class="grid-col-left">
+                <img class="preview-image" src="images/Step3.png" alt="How step 3 would look like in the app">
+            </div>
+            <div class="grid-col-right">
+                <h2>Step 3</h2>
+                <p>
+                    Once the task has been completed, the user is complimented and reminded that the last step consists of jinxing five other participants. The user is reminded that this is done by being in proximity of others who have installed the app. The user is also notified that his deposit has been unlocked.
+                </p>
+                <div class="progress-graphic">
+                    <div class="progress-indicator full"></div>
+                    <div class="progress-line"></div>
+                    <div class="progress-indicator full"></div>
+                    <div class="progress-line"></div>
+                    <div class="progress-indicator full"></div>
+                    <div class="progress-line"></div>
+                    <div class="progress-indicator"></div>
+                </div>
+            </div>
+        </section>
+        <section class="main-grid-container">    
+            <div class="grid-col-left">
+                <img class="preview-image" src="images/Step4.png" alt="How step 4 would look like in the app">
+            </div>
+            <div class="grid-col-right">
+                <h2>Step 4</h2>
+                <p>
+                    Upon jinxing the last of five people necessary, the user is notified that they now have access to the lottery and able to win the amount in the prize pool. They are notified about the current prize pool, as well as how much the prize pool has increased over the last week from deposits of other participants who failed to complete the challenge in time. The user is reminded about the ending date of the challenge and that getting jinxed again and completing additional tasks would increase their chance to win.
+                </p>
+                <div class="progress-graphic">
+                    <div class="progress-indicator full"></div>
+                    <div class="progress-line"></div>
+                    <div class="progress-indicator full"></div>
+                    <div class="progress-line"></div>
+                    <div class="progress-indicator full"></div>
+                    <div class="progress-line"></div>
+                    <div class="progress-indicator full"></div>
+                </div>
+            </div>
+        </section>
+    </article>
 </main>
 
+<footer class="centered__footer">
+    <a class="btn btn--sources" href="sources.html">Sources</a>
+</footer>
 
 </body>
 </html>

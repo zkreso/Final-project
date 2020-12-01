@@ -1,0 +1,396 @@
+/* 4.0 LANDING PAGE COMPONENTS */
+
+/* 4.1 Hero section */
+
+.header__h1 {
+    max-width: 30ch;
+    padding-top: 8rem;
+    padding-bottom: 6rem;
+    padding-right: 6rem;
+    padding-left: 6rem;
+    line-height: 7rem;
+}
+
+.header__p {
+    font-size: 3rem;
+    letter-spacing: .1rem;
+}
+
+.hero {
+    text-align: center;
+}
+
+.header-container {
+    width: 100%;
+    background-image: linear-gradient(to top, #ddd, #eee);
+    padding-top: 15rem;
+    margin-top: -15rem;
+    padding-bottom: 35rem;
+    margin-bottom: -35rem;
+}
+
+
+.imagecontainer {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.heroImage {
+    display: block;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    border-radius: 4.8rem;
+}
+
+/* App Showreel */
+
+#showreel-container {
+    position: relative;
+}
+
+.showreel__picture {
+    position: absolute;
+    left: 50%;
+    top: 2rem;
+    transform: translateX(-50%);
+    background-color: #014c51;
+}
+
+#empty {
+    opacity: 0;
+}
+
+#shadow {
+    box-shadow: 0 5rem 4rem rgba(0, 0, 0, 0.2);
+}
+
+#picture1 {
+    animation: showreel 17.5s;
+    animation-iteration-count: infinite;
+    animation-delay: 0;
+    z-index: 14;
+}
+
+#picture2 {
+    animation: showreel 17.5s;
+    animation-iteration-count: infinite;
+    animation-delay: 3.5s;
+    z-index: 13;
+}
+
+#picture3 {
+    animation: showreel 17.5s;
+    animation-iteration-count: infinite;
+    animation-delay: 7s;
+    z-index: 12;
+}
+
+#picture4 {
+    animation: showreel 17.5s;
+    animation-iteration-count: infinite;
+    animation-delay: 10.5s;
+    z-index: 11;
+}
+
+#picture5 {
+    animation: showreel 17.5s;
+    animation-iteration-count: infinite;
+    animation-delay: 14s;
+    z-index: 10;
+}
+
+/* 4.2 Main (of landing page) */
+
+.left-column {
+    position: relative;
+}
+
+.climate-goal {
+    width: 15rem;
+    position: absolute;
+    top: 2rem;
+    right: 5rem;
+}
+
+.climate-goal-hidden {
+    width: 15rem;
+    float: right;
+    margin: 0 auto 0 3rem;
+    position: absolute;
+    left: -99rem;
+}
+
+.mainContent {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 240ch;
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+}
+
+.section-styling {
+    margin: 2rem auto;
+    background-color: #fff;
+    padding: 2rem 4rem;
+    margin-bottom: 10rem;
+}
+
+.section-environment {
+    background-image: linear-gradient(to bottom,#efefef, rgba(1, 75, 81, 0.40), rgba(1, 75, 81, 0.60), #efefef), url(../../images/Rainforest.jpg);
+    background-size: cover;
+    background-position: bottom;
+    display: block;
+    width: 100%;
+}
+
+.minimized {
+    color: rgb(102, 102, 102);
+    font-size: 1rem;
+}
+
+.minimized:hover {
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.minimized__container:hover {
+    border-radius: 2.5rem;
+    box-shadow: 0 .2rem #DDD;
+    border: .1rem solid #DDD;
+    
+}
+
+
+.btn--main:link, .btn--main:visited {
+    color: #fff;
+    background-color: rgba(1, 75, 81, 0.6);
+    position: relative;
+}
+
+.btn--main:hover, .btn--main:active {
+    background-color: rgba(1, 75, 81, 0.9);
+    animation: fillBtn .5s;
+}
+
+.arrow {
+    border: solid #fff;
+    border-width: 0 .3rem .3rem 0;
+    display: inline-block;
+    padding: .3rem;
+}
+
+.right {
+    transform: rotate(-45deg);
+}
+
+/* Animations */
+
+@keyframes fillBtn {
+    0% {
+        background-color: #014c51b9;
+    }
+    100% {
+        background-color: #014c51e5;
+    }
+}
+
+@keyframes showreel {
+    0% {
+        opacity: 1;
+    }
+    17% {
+        opacity: 1;
+    }   
+    23% {
+        opacity: 0;
+    }
+    94% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Media Queries */
+
+@media (max-width: 1450px) {
+
+
+    .heroImage {
+        border-radius: 3.75rem;
+        width: 25%;
+    }
+
+    .climate-goal-hidden {
+        position: static;
+        width: 12rem;
+    }
+
+    .climate-goal {
+        position: absolute;
+        left: -99rem;
+    }
+
+}
+
+@media (max-width: 1200px) {
+
+
+    .climate-goal {
+        width: 13rem;
+    }
+
+    .heroImage {
+        border-radius: 3rem;
+        width: 30%;
+    }
+
+    .mainContent {
+        grid-template-columns: 1fr 8fr 1fr;
+    }
+
+    .header__h1 {
+        font-size: 4rem;
+    }
+
+    .header__p {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .section-styling {
+        padding: 2rem 3rem;
+        margin-bottom: 7.5rem;
+    }
+
+    .heroImage {
+        border-radius: 2rem;
+    }
+
+    #shadow {
+        box-shadow: 0 3rem 4rem rgba(0, 0, 0, 0.2);
+    }
+
+    .header-container {
+        padding-bottom: 28rem;
+        margin-bottom: -28rem;
+    }
+
+    .mainContent {
+        grid-template-columns: 1fr 10fr 1fr;
+    }
+
+    .header__h1 {
+        font-size: 3.5rem;
+    }
+
+    .header__p {
+        font-size: 2rem;
+    }
+
+    .button-center-wrapper {
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .mainContent {
+    grid-template-columns: 1fr 20fr 1fr;
+    }
+
+    .climate-goal-hidden {position: static;}
+
+    .climate-goal {
+        position: absolute;
+        left: -99rem;
+    }
+
+    .header-container {
+        padding-bottom: 25rem;
+        margin-bottom: -25rem;
+    }
+
+
+    .heroImage {
+        border-radius: 1.5rem;
+        width: 35%;
+    }
+
+    .header__h1 {
+        line-height: 4rem;
+    }
+
+    
+}
+
+@media (max-width: 400px) {
+
+    .section-styling {
+        margin-bottom: 5rem;
+    }
+
+    .heroImage {
+        border-radius: 1rem;
+        width: 45%;
+    }
+
+    .header-container {
+        padding-bottom: 22rem;
+        margin-bottom: -22rem;
+    }
+
+    
+}
+
+/* IE support */
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .mainContent {
+        display: flex;
+        justify-content: center;
+    } 
+
+    .center-column {
+        flex-basis: 75%;
+    }
+
+    .left-column {
+        flex-basis: 12.5%;
+    }
+    
+    .right-column {
+        flex-basis: 12.5%;
+    }
+}
+
+@media only screen and (max-width: 600px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .center-column {
+        flex-basis: 90%
+    }
+    .left-column {
+        flex-basis: 5%;
+    }
+    
+    .right-column {
+        flex-basis: 5%;
+    }
+}
+
+@media only screen and (max-width: 900px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .center-column {
+        flex-basis: 85%
+    }
+    .left-column {
+        flex-basis: 7.5%;
+    }
+    
+    .right-column {
+        flex-basis: 7.5%;
+    }
+}

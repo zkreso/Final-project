@@ -1,0 +1,43 @@
+Zlatko:
+
+
+
+Isak:
+
+
+
+
+
+Fikse html ref fra links til stylesheet
+
+
+
+Øystein:
+
+tekstansvarlig
+
+siste pri: sjekk sup
+
+
+
+
+Aller siste pri: bytte bilder
+
+FERDIG
+===
+Navbar
+linje til navbar
+Read more button
+styling vision
+eksperimenter med marg landing
+halver avstand mellom divs
+mobilbilde
+skyggen
+tilhørende div
+alt tekst
+avstand footer sources
+merge divs sources
+linjeskift vision
+tekst app-pitch
+variables copy paste
+siste pri: link til un bærekraftmål
