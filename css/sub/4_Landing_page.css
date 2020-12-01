@@ -1,6 +1,7 @@
 /* 4.0 LANDING PAGE COMPONENTS */
 
 /* 4.1 Hero section */
+
 .header__h1 {
     max-width: 30ch;
     padding-top: 8rem;
@@ -39,7 +40,6 @@
     width: 20%;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 0 8rem 6rem rgba(0, 0, 0, 0.2);
     z-index: 1;
     border-radius: 4.8rem;
 }
@@ -59,8 +59,11 @@
 }
 
 #empty {
-    position: relative;
     opacity: 0;
+}
+
+#shadow {
+    box-shadow: 0 5rem 4rem rgba(0, 0, 0, 0.2);
 }
 
 #picture1 {
@@ -220,6 +223,7 @@
 
     .heroImage {
         border-radius: 3.75rem;
+        width: 25%;
     }
 
     .climate-goal-hidden {
@@ -243,6 +247,7 @@
 
     .heroImage {
         border-radius: 3rem;
+        width: 30%;
     }
 
     .mainContent {
@@ -267,6 +272,15 @@
 
     .heroImage {
         border-radius: 2rem;
+    }
+
+    #shadow {
+        box-shadow: 0 3rem 4rem rgba(0, 0, 0, 0.2);
+    }
+
+    .header-container {
+        padding-bottom: 28rem;
+        margin-bottom: -28rem;
     }
 
     .mainContent {
@@ -299,8 +313,15 @@
         left: -99rem;
     }
 
+    .header-container {
+        padding-bottom: 25rem;
+        margin-bottom: -25rem;
+    }
+
+
     .heroImage {
         border-radius: 1.5rem;
+        width: 35%;
     }
 
     .header__h1 {
@@ -318,8 +339,13 @@
 
     .heroImage {
         border-radius: 1rem;
+        width: 45%;
     }
 
+    .header-container {
+        padding-bottom: 22rem;
+        margin-bottom: -22rem;
+    }
 
     
 }
