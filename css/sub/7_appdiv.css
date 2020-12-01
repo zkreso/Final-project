@@ -2,14 +2,18 @@
 
 /* Container */
 .app-div-container {
-    display: grid;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr auto;
 }
 
 /* Top part and contents */
+
+.app-div-card-top {
+    flex-basis: 25%;
+}
 
 .app-div-image {
     display: block;
@@ -25,6 +29,7 @@
 
 /* Bottom part and contents */
 .app-div-card-bottom {
+    flex-basis: 25%;
     padding: 1rem;
     padding-bottom: 2rem;
 }

@@ -103,10 +103,6 @@
 
 /* 4.2 Main (of landing page) */
 
-.left-grid-column {
-    position: relative;
-}
-
 .climate-goal {
     width: 15rem;
     position: absolute;
@@ -126,8 +122,12 @@
     margin-left: auto;
     margin-right: auto;
     max-width: 240ch;
-    display: grid;
-    grid-template-columns: 1fr 6fr 1fr;
+    display: flex;
+    justify-content: center;
+}
+
+.center-column {
+    flex-basis: 75%;
 }
 
 .section-styling {
@@ -140,6 +140,15 @@
     */
     padding: 2rem 4rem;
     margin-bottom: 10rem;
+}
+
+.left-column {
+    flex-basis: 12.5%;
+    position: relative;
+}
+
+.right-column {
+    flex-basis: 12.5%;
 }
 
 .section--environment {
