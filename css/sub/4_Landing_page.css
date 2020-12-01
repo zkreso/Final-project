@@ -143,9 +143,12 @@
 }
 
 .section--environment {
-    background-image: linear-gradient(to bottom,#efefef, #014c5146, #014c517c, #efefef), url(../../images/Rainforest.jpg);
+    /*background-image: linear-gradient(to bottom,#efefef, #014c5146, #014c517c, #efefef), url(../../images/Rainforest.jpg);*/
+    background-image: linear-gradient(to bottom,#efefef, rgba(1, 75, 81, 0.40), rgba(1, 75, 81, 0.60), #efefef), url(../../images/Rainforest.jpg);
     background-size: cover;
     background-position: bottom;
+    display: block;
+    width: 100%;
 }
 
 .minimized {
@@ -168,12 +171,12 @@
 
 .btn--main:link, .btn--main:visited {
     color: #fff;
-    background-color: #014c51b9;
+    background-color: rgba(1, 75, 81, 0.6);
     position: relative;
 }
 
 .btn--main:hover, .btn--main:active {
-    background-color: #014c51e5;
+    background-color: rgba(1, 75, 81, 0.9);
     animation: fillBtn .5s;
 }
 
@@ -354,10 +357,10 @@
 /* IE support */
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    .climate-goal {
+    .mainContent {
         display: flex;
         justify-content: center;
-    }
+    } 
 
     .center-column {
         flex-basis: 75%;
@@ -369,5 +372,31 @@
     
     .right-column {
         flex-basis: 12.5%;
+    }
+}
+
+@media only screen and (max-width: 600px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .center-column {
+        flex-basis: 90%
+    }
+    .left-column {
+        flex-basis: 5%;
+    }
+    
+    .right-column {
+        flex-basis: 5%;
+    }
+}
+
+@media only screen and (max-width: 900px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .center-column {
+        flex-basis: 85%
+    }
+    .left-column {
+        flex-basis: 7.5%;
+    }
+    
+    .right-column {
+        flex-basis: 7.5%;
     }
 }
