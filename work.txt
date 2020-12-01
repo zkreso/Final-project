@@ -5,7 +5,7 @@ Zlatko:
 Isak:
 
 
-tilhørende div
+
 alt tekst
 variables copy paste
 Fikse html ref fra links til stylesheet
@@ -37,3 +37,4 @@ eksperimenter med marg landing
 halver avstand mellom divs
 mobilbilde
 skyggen
+tilhørende div
