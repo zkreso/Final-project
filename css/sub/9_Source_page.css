@@ -46,6 +46,10 @@
     color: inherit;
 }
 
+.reference-list a:hover {
+    background-color: #efefef;
+}
+
 /* 9.5 Responsive */
 
 @media (max-width: 700px) {
