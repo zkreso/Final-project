@@ -7,7 +7,7 @@ Isak:
 
 
 
-variables copy paste
+
 Fikse html ref fra links til stylesheet
 
 siste pri: link til un bærekraftmål
@@ -39,3 +39,4 @@ mobilbilde
 skyggen
 tilhørende div
 alt tekst
+variables copy paste
