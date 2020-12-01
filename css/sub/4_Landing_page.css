@@ -55,7 +55,7 @@
     left: 50%;
     top: 2rem;
     transform: translateX(-50%);
-    background-color: var(--colour-secondary);
+    background-color: #014c51;
 }
 
 #empty {
@@ -143,7 +143,7 @@
 }
 
 .section--environment {
-    background-image: linear-gradient(to bottom,#efefef, var(--colour-background-light), var(--colour-background-dark), #efefef), url(../../images/Rainforest.jpg);
+    background-image: linear-gradient(to bottom,#efefef, #014c5146, #014c517c, #efefef), url(../../images/Rainforest.jpg);
     background-size: cover;
     background-position: bottom;
 }
@@ -168,11 +168,11 @@
 
 .btn--main:link, .btn--main:visited {
     color: #fff;
-    background-color: var(--colour-button-light);
+    background-color: #014c51b9;
 }
 
 .btn--main:hover, .btn--main:active {
-    background-color: var(--colour-button-dark);
+    background-color: #014c51e5;
     animation: fillBtn .5s;
 }
 
@@ -191,10 +191,10 @@
 
 @keyframes fillBtn {
     0% {
-        background-color: var(--colour-button-light);
+        background-color: #014c51b9;
     }
     100% {
-        background-color: var(--colour-button-dark);
+        background-color: #014c51e5;
     }
 }
 

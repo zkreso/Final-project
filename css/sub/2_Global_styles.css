@@ -23,7 +23,7 @@ h1 {
     bottom: 0;
     width: 2ch;
     height: 0.8rem;
-    background-color: var(--colour-secondary);
+    background-color: #014c51;
     border-radius: 50rem;
 }
 
@@ -75,7 +75,6 @@ p {
 
 @media (max-width: 600px) {
     
-    /* skal tilsvare 16px*/
     :root {
         font-size: 50%;
     }
