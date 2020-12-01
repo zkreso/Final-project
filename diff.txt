@@ -1,0 +1,170 @@
+diff --git a/css/sub/4_Landing_page.css b/css/sub/4_Landing_page.css
+index df1d23c..db8fc0d 100644
+--- a/css/sub/4_Landing_page.css
++++ b/css/sub/4_Landing_page.css
+@@ -103,10 +103,6 @@
+ 
+ /* 4.2 Main (of landing page) */
+ 
+-.left-grid-column {
+-    position: relative;
+-}
+-
+ .climate-goal {
+     width: 15rem;
+     position: absolute;
+@@ -126,8 +122,12 @@
+     margin-left: auto;
+     margin-right: auto;
+     max-width: 240ch;
+-    display: grid;
+-    grid-template-columns: 1fr 6fr 1fr;
++    display: flex;
++    justify-content: center;
++}
++
++.center-column {
++    flex-basis: 75%;
+ }
+ 
+ .section-styling {
+@@ -142,6 +142,15 @@
+     margin-bottom: 10rem;
+ }
+ 
++.left-column {
++    flex-basis: 12.5%;
++    position: relative;
++}
++
++.right-column {
++    flex-basis: 12.5%;
++}
++
+ .section--environment {
+     background-image: linear-gradient(to bottom,#efefef, #014c5146, #014c517c, #efefef), url(../../images/Rainforest.jpg);
+     background-size: cover;
+diff --git a/css/sub/5_App_page.css b/css/sub/5_App_page.css
+index c01bfd8..927745d 100644
+--- a/css/sub/5_App_page.css
++++ b/css/sub/5_App_page.css
+@@ -159,57 +159,5 @@
+     .app--page--summary h1 {
+         font-size: 4rem;
+     }
+-
+-}
+-
+-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+-    /* IE10+ CSS */
+-    .main-grid-container {
+-        display: flex;
+-        background-color: white;
+-        border-radius: 25px;
+-        box-shadow: 0px 5px #DDD;
+-        border: 2px solid #DDD;
+-    }
+-
+-    .grid-col-right {   
+-        display: flex;
+-        flex-direction: column;
+-        flex-basis: 50%;
+-        flex-grow: 0;
+-    }
+-
+-    .progress-graphic {     
+-        max-width: auto;
+-        margin: 0;
+     
+-        position: absolute;
+-        left: 50%;
+-        transform: translate(-50%, 0);
+-        bottom: 12%;
+-        display: flex;
+-    
+-        align-items: center;
+-    }
+- }
+-
+- @media only screen and (max-width: 900px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+-    /* IE10+ CSS on small resolutions */
+-    .main-grid-container {
+-        flex-direction: row;
+-        flex-wrap: wrap;
+-    }
+-
+-    .grid-col-left {
+-        flex-basis: 50%;
+-        flex-shrink: 0;
+-        flex-grow: 1;
+-    }
+-
+-    .grid-col-right {
+-        flex-basis: 300px;   
+-        flex-grow: 1;
+-        flex-shrink: 0;
+-    }
+-
+ }
+diff --git a/css/sub/7_appdiv.css b/css/sub/7_appdiv.css
+index 6564822..6dfa1c2 100644
+--- a/css/sub/7_appdiv.css
++++ b/css/sub/7_appdiv.css
+@@ -2,15 +2,19 @@
+ 
+ /* Container */
+ .app-div-container {
+-    display: grid;
++    display: flex;
++    justify-content: center;
++    flex-wrap: wrap;
+     margin-left: auto;
+     margin-right: auto;
+-    grid-template-columns: repeat(4, 1fr);
+-    grid-template-rows: 1fr auto;
+ }
+ 
+ /* Top part and contents */
+ 
++.app-div-card-top {
++    flex-basis: 25%;
++}
++
+ .app-div-image {
+     display: block;
+     width: 50%;
+@@ -25,6 +29,7 @@
+ 
+ /* Bottom part and contents */
+ .app-div-card-bottom {
++    flex-basis: 25%;
+     padding: 1rem;
+     padding-bottom: 2rem;
+ }
+diff --git a/index.html b/index.html
+index 94533e9..a0e7616 100644
+--- a/index.html
++++ b/index.html
+@@ -49,11 +49,11 @@
+         <main class="main-landingpage section--environment" id="main-content__index">
+             <div class="mainContent">
+                 <!-- Left Grid column -->
+-                <div class="left-grid-column"> 
++                <div class="left-column"> 
+                     <a target=_blank href="https://www.un.org/sustainabledevelopment/climate-change/"><img src="images/E_WEB_13.png" alt="UN climate goal nr. 13 climate action" class="climate-goal"></a>
+                 </div>
+                 <!-- Center Grid Column -->
+-                <article>
++                <article class="center-column">
+                     <section class="section-styling standard-padding">
+                         <h2>JINX</h2>
+                         <p>
+@@ -140,7 +140,7 @@
+                     
+                 </article>
+                 <!-- Right Grid column -->
+-                <div>
++                <div class="right-column">
+                     
+                 </div>
+             </div>
