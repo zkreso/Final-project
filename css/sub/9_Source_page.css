@@ -19,12 +19,14 @@
 
 .sources-container {
     margin: auto;
-    max-width: 105rem;
+    max-width: 100rem;
     margin-bottom: 3rem;
     background-color: white;
     box-shadow: 0px 5px #DDD;
     border: 2px solid #DDD;
     border-radius: 12px;
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 
 /* 9.4 Reference-list */
@@ -58,5 +60,10 @@
 @media (max-width: 700px) {
     .reference-list {
         max-width: none;
+    }
+
+    .sources-container {
+        padding-left: 0rem;
+        padding-right: 0rem;
     }
 }
