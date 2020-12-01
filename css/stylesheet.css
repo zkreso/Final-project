@@ -384,7 +384,7 @@ Global styles on mobile */
 }
 
 .section-environment {
-    background-image: linear-gradient(to bottom,#efefef, rgba(1, 75, 81, 0.40), rgba(1, 75, 81, 0.60), #efefef), url(../../images/Rainforest.jpg);
+    background-image: linear-gradient(to bottom,#efefef, rgba(1, 75, 81, 0.40), rgba(1, 75, 81, 0.60), #efefef), url(../images/Rainforest.jpg);
     background-size: cover;
     background-position: bottom;
     display: block;
