@@ -10,7 +10,7 @@ Isak:
 
 Fikse html ref fra links til stylesheet
 
-siste pri: link til un bærekraftmål
+
 
 Øystein:
 
@@ -40,3 +40,4 @@ merge divs sources
 linjeskift vision
 tekst app-pitch
 variables copy paste
+siste pri: link til un bærekraftmål
