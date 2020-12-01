@@ -30,6 +30,7 @@
 /* Bottom part and contents */
 .app-div-card-bottom {
     flex-basis: 25%;
+    box-sizing: border-box;
     padding: 1rem;
     padding-bottom: 2rem;
 }
@@ -53,7 +54,7 @@
 
 @media (max-width: 900px) {
     .app-div-card-bottom {
-        grid-column: span 4;
+        /*grid-column: span 4;*/
         padding-bottom: 0;
     }
 

@@ -297,6 +297,14 @@
         grid-template-columns: 1fr 10fr 1fr;
     }
 
+    .center-column {
+        flex-basis: 83.33%;
+    }
+
+    .right-column, .left-column {
+        flex-basis: 8.33%;
+    }
+
     .header__h1 {
         font-size: 3.5rem;
     }
@@ -312,8 +320,16 @@
 
 @media (max-width: 600px) {
 
-    .mainContent {
+    /*.mainContent {
     grid-template-columns: 1fr 20fr 1fr;
+    }*/
+
+    .center-column {
+        flex-basis: 90.909%;
+    }
+
+    .right-column, .left-column {
+        flex-basis: 4.545%;
     }
 
     .climate-goal-hidden {position: static;}
@@ -337,8 +353,6 @@
     .header__h1 {
         line-height: 4rem;
     }
-
-    
 }
 
 @media (max-width: 400px) {
