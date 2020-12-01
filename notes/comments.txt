@@ -1,0 +1,23 @@
+Klikkbare linker sources
+
+fiks hover button
+
+gjør alle divs i samme stil
+mellomting mellom rund og skarp
+
+alt tekst
+fjern image og illustrations fra alt tekst
+app page er bra
+resten må kanskje gjøres noe med
+wcag.com
+
+fjern liten tekst
+
+fjern imports før levering
+
+gjør om alt av grid
+legg på -ms- prefix
+
+slett alt som er kommentert ut før levering
+
+lazy-loading?
