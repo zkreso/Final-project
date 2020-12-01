@@ -1,4 +1,4 @@
-/* 7 App div for landing page */
+/* 7.0 App div for landing page */
 
 /* Container */
 .app-div-container {
@@ -67,4 +67,36 @@
         display: none;
     }
     
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+    .app-div-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .app-div-card-bottom {
+        flex-basis: 20%;
+        flex-grow: 1;
+    }
+
+    .app-div-card-top {
+        flex-basis: 25%;
+    }
+
+}
+
+@media only screen and (max-width: 900px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .app-div-card-bottom {
+        flex-basis: 100%;
+        flex-shrink: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .app-div-container {
+        display: none;
+    }
 }
