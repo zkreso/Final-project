@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /* 4.0 LANDING PAGE COMPONENTS */
 
 /* 4.1 Hero section */
@@ -22,6 +29,8 @@
 
 .header-container {
     width: 100%;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#ddd), to(#eee));
+    background-image: -o-linear-gradient(bottom, #ddd, #eee);
     background-image: linear-gradient(to top, #ddd, #eee);
     padding-top: 15rem;
     margin-top: -15rem;
@@ -54,7 +63,9 @@
     position: absolute;
     left: 50%;
     top: 2rem;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
     background-color: #014c51;
 }
 
@@ -63,41 +74,57 @@
 }
 
 #shadow {
-    box-shadow: 0 5rem 4rem rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 5rem 4rem rgba(0, 0, 0, 0.2);
+            box-shadow: 0 5rem 4rem rgba(0, 0, 0, 0.2);
 }
 
 #picture1 {
-    animation: showreel 17.5s;
-    animation-iteration-count: infinite;
-    animation-delay: 0;
+    -webkit-animation: showreel 17.5s;
+            animation: showreel 17.5s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-delay: 0;
+            animation-delay: 0;
     z-index: 14;
 }
 
 #picture2 {
-    animation: showreel 17.5s;
-    animation-iteration-count: infinite;
-    animation-delay: 3.5s;
+    -webkit-animation: showreel 17.5s;
+            animation: showreel 17.5s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-delay: 3.5s;
+            animation-delay: 3.5s;
     z-index: 13;
 }
 
 #picture3 {
-    animation: showreel 17.5s;
-    animation-iteration-count: infinite;
-    animation-delay: 7s;
+    -webkit-animation: showreel 17.5s;
+            animation: showreel 17.5s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-delay: 7s;
+            animation-delay: 7s;
     z-index: 12;
 }
 
 #picture4 {
-    animation: showreel 17.5s;
-    animation-iteration-count: infinite;
-    animation-delay: 10.5s;
+    -webkit-animation: showreel 17.5s;
+            animation: showreel 17.5s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-delay: 10.5s;
+            animation-delay: 10.5s;
     z-index: 11;
 }
 
 #picture5 {
-    animation: showreel 17.5s;
-    animation-iteration-count: infinite;
-    animation-delay: 14s;
+    -webkit-animation: showreel 17.5s;
+            animation: showreel 17.5s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-delay: 14s;
+            animation-delay: 14s;
     z-index: 10;
 }
 
@@ -126,7 +153,9 @@
     margin-left: auto;
     margin-right: auto;
     max-width: 240ch;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 6fr 1fr;
     grid-template-columns: 1fr 6fr 1fr;
 }
 
@@ -143,6 +172,8 @@
 }
 
 .section--environment {
+    background-image: -webkit-gradient(linear,left top, left bottom,from(#efefef), color-stop(#014c5146), color-stop(#014c517c), to(#efefef)), url(../../images/Rainforest.jpg);
+    background-image: -o-linear-gradient(top,#efefef, #014c5146, #014c517c, #efefef), url(../../images/Rainforest.jpg);
     background-image: linear-gradient(to bottom,#efefef, #014c5146, #014c517c, #efefef), url(../../images/Rainforest.jpg);
     background-size: cover;
     background-position: bottom;
@@ -160,7 +191,8 @@
 
 .minimized__container:hover {
     border-radius: 2.5rem;
-    box-shadow: 0 .2rem #DDD;
+    -webkit-box-shadow: 0 .2rem #DDD;
+            box-shadow: 0 .2rem #DDD;
     border: .1rem solid #DDD;
     
 }
@@ -174,7 +206,8 @@
 
 .btn--main:hover, .btn--main:active {
     background-color: #014c51e5;
-    animation: fillBtn .5s;
+    -webkit-animation: fillBtn .5s;
+            animation: fillBtn .5s;
 }
 
 .arrow {
@@ -185,10 +218,21 @@
 }
 
 .right {
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
 }
 
 /* Animations */
+
+@-webkit-keyframes fillBtn {
+    0% {
+        background-color: #014c51b9;
+    }
+    100% {
+        background-color: #014c51e5;
+    }
+}
 
 @keyframes fillBtn {
     0% {
@@ -196,6 +240,24 @@
     }
     100% {
         background-color: #014c51e5;
+    }
+}
+
+@-webkit-keyframes showreel {
+    0% {
+        opacity: 1;
+    }
+    17% {
+        opacity: 1;
+    }   
+    23% {
+        opacity: 0;
+    }
+    94% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
 
@@ -252,6 +314,7 @@
     }
 
     .mainContent {
+        -ms-grid-columns: 1fr 8fr 1fr;
         grid-template-columns: 1fr 8fr 1fr;
     }
 
@@ -276,7 +339,8 @@
     }
 
     #shadow {
-        box-shadow: 0 3rem 4rem rgba(0, 0, 0, 0.2);
+        -webkit-box-shadow: 0 3rem 4rem rgba(0, 0, 0, 0.2);
+                box-shadow: 0 3rem 4rem rgba(0, 0, 0, 0.2);
     }
 
     .header-container {
@@ -285,6 +349,7 @@
     }
 
     .mainContent {
+        -ms-grid-columns: 1fr 10fr 1fr;
         grid-template-columns: 1fr 10fr 1fr;
     }
 
@@ -304,6 +369,7 @@
 @media (max-width: 600px) {
 
     .mainContent {
+    -ms-grid-columns: 1fr 20fr 1fr;
     grid-template-columns: 1fr 20fr 1fr;
     }
 

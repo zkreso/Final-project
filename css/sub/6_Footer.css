@@ -1,7 +1,16 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .centered__footer {
     text-align: center;
     display: block;
     height: 10rem;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#014c51), to(#003539));
+    background-image: -o-linear-gradient(bottom, #014c51, #003539);
     background-image: linear-gradient(to top, #014c51, #003539); 
 }
 
@@ -11,14 +20,20 @@
 }
 
 .btn:hover {
-    transform: translateY(-.3rem);
-    box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+    -webkit-transform: translateY(-.3rem);
+        -ms-transform: translateY(-.3rem);
+            transform: translateY(-.3rem);
+    -webkit-box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+            box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
     margin-bottom: 0rem;
 }
 
 .btn:active {
-    transform: translateY(-.1rem);
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+    -webkit-transform: translateY(-.1rem);
+        -ms-transform: translateY(-.1rem);
+            transform: translateY(-.1rem);
+    -webkit-box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+            box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
 }
 
 .btn:link, .btn:visited {

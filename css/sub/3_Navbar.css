@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /* GLOBAL COMPONENTS */
 /* 3.1 Navbar */
 
@@ -5,6 +12,8 @@
     width: 100%;
     font-size: 1.8rem;
     text-align: center;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#014c51), to(#003539));
+    background-image: -o-linear-gradient(bottom, #014c51, #003539);
     background-image: linear-gradient(to top, #014c51, #003539);
     position: fixed;
     z-index: 99;
@@ -13,12 +22,18 @@
 }
 
 .nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     list-style-type: none;
     padding: 0;
     margin: 0;
-    align-items: center;
-    justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
 }
 
 .nav ul li{
@@ -90,11 +105,14 @@
 
 @media only screen and (max-width: 500px) {
     .nav ul {
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
 
     .nav ul li:nth-child(n+2) {
-        flex-grow: 1;
+        -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1;
     }
 
     .nav ul li a:not(.logo) {
@@ -102,7 +120,8 @@
     }
 
     .logo {
-        flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
         width: 100vw;
         padding: 0;
         font-size: 2rem;
