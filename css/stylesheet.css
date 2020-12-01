@@ -33,6 +33,10 @@ sup { vertical-align: top;
     top: -0.5em;
 }
 
+.body--background-colour {
+    background-image: linear-gradient(to right bottom,#efefef, rgba(1, 75, 81, 0.40));
+}
+
 /* 2.1 Underline decoration for headers */
 
 .pynt {
