@@ -39,7 +39,7 @@
     width: 20%;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 0 8rem 6rem rgba(0, 0, 0, 0.2);
+    /*box-shadow: 0 7rem 6rem rgba(0, 0, 0, 0.2);*/
     z-index: 1;
     border-radius: 4.8rem;
 }
@@ -59,8 +59,11 @@
 }
 
 #empty {
-    position: relative;
     opacity: 0;
+}
+
+#shadow {
+    box-shadow: 0 5rem 4rem rgba(0, 0, 0, 0.2);
 }
 
 #picture1 {
@@ -220,6 +223,7 @@
 
     .heroImage {
         border-radius: 3.75rem;
+        width: 25%;
     }
 
     .climate-goal-hidden {
@@ -243,6 +247,7 @@
 
     .heroImage {
         border-radius: 3rem;
+        width: 30%;
     }
 
     .mainContent {
@@ -301,6 +306,7 @@
 
     .heroImage {
         border-radius: 1.5rem;
+        width: 35%;
     }
 
     .header__h1 {
@@ -318,6 +324,7 @@
 
     .heroImage {
         border-radius: 1rem;
+        width: 45%;
     }
 
 
