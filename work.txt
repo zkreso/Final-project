@@ -1,9 +1,6 @@
 Zlatko:
 
-Navbar
-linje til navbar
-Read more button
-styling vision
+
 
 Isak:
 
@@ -32,3 +29,10 @@ siste pri: sjekk sup
 
 
 Aller siste pri: bytte bilder
+
+FERDIG
+===
+Navbar
+linje til navbar
+Read more button
+styling vision

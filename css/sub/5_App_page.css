@@ -30,8 +30,7 @@
     margin: auto;
     box-shadow: 5px 5px 20px grey;
     border-radius: 15px;
-    width: 250px;
-    max-width: 90vw;
+    width: 60%;
 }
 
 /* 5.4 Right square */
@@ -48,6 +47,10 @@
 .grid-col-right > * {
     max-width: 65rem;
     margin: 0 1.6rem;
+}
+
+.grid-col-right > h2 {
+    font-size: 6rem;
 }
 
 
@@ -102,6 +105,7 @@
     margin: auto;
     max-width: 140rem;
     background-color: white;
+    border: 2px solid #DDD;
 }
 
 .app--page--summary > * {
@@ -130,7 +134,7 @@
     }
 
     .preview-image {
-        max-width: 60%;
+        max-width: 50%;
     }
 
     .grid-col-right {
@@ -150,6 +154,10 @@
 
     .grid-col-right > p {
         margin: 0 3rem;
+    }
+
+    .app--page--summary h1 {
+        font-size: 4rem;
     }
     
 }

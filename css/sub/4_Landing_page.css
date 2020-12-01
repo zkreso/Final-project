@@ -127,16 +127,14 @@
     grid-template-columns: 1fr 6fr 1fr;
 }
 
-.mainContent p {
-    color: var(--colour-secondary);
-}
-
 .section-styling {
     margin: 2rem auto;
     background-color: #fff;
+    /*
     border-radius: 2.5rem;
-    box-shadow: 0 .5rem #DDD;
-    border: .2rem solid #DDD;
+    box-shadow: 1rem 1rem 3rem rgba(0,0,0,0.2);;
+    border: .5rem solid #477D81;
+    */
     padding: 2rem 4rem;
     margin-bottom: 15rem;
 }
@@ -163,6 +161,7 @@
     border: .1rem solid #DDD;
     
 }
+
 
 .btn--main:link, .btn--main:visited {
     color: #fff;
@@ -279,6 +278,10 @@
 
     .header__p {
         font-size: 2rem;
+    }
+
+    .button-center-wrapper {
+        text-align: center;
     }
 }
 

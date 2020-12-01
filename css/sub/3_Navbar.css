@@ -4,11 +4,12 @@
 .nav {
     width: 100%;
     font-size: 1.8rem;
-    text-align: right;
+    text-align: center;
     background-image: linear-gradient(to top, var(--colour-secondary), var(--colour-primary));
     position: fixed;
     z-index: 99;
     top: 0;
+    border-bottom: 0.3rem solid #efefef;
 }
 
 .nav ul {

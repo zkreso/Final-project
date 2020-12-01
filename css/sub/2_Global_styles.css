@@ -11,14 +11,19 @@ h1 {
 }
 
 /* 3.2 Underline decoration for headers */
+
+.pynt {
+    position: relative;
+}
+
 .pynt:after {
     position: absolute;
     content: "";
-    left: 0;
+    left: 8ch;
     bottom: 0;
     width: 2ch;
     height: 0.8rem;
-    background-color: var(--accent-colour);
+    background-color: var(--colour-secondary);
     border-radius: 50rem;
 }
 

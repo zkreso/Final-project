@@ -1,42 +1,15 @@
 /* 8.1 Main */
 
 .main-vision-page {
-    margin: 0;
-    padding: 0;
     width: 100%;
-}
-
-/* 8.1 Header */
-
-.vision-page-header {
-    max-width: 140rem;
-    margin: 0 auto 3rem auto;
-    padding: 0;
-    background-color: white;
-    box-shadow: 0px 5px #DDD;
-    border: 2px solid #DDD;
-    border-radius: 25px;
-}
-
-.vision-page-header h1 {
-    padding: 3rem 3rem;
-}
-
-/* 8.2 Container for squares */
-
-.vision-container {
-    max-width: 140rem;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
 /* 8.3 Boxes/sections in container */
 
 .vision-content {
-    flex-basis: 100%;    
-    box-sizing: border-box;
+    max-width: 105rem;
+    margin-left: auto;
+    margin-right: auto;
     background-color: white;
     margin-bottom: 3rem;
     border-radius: 25px;
@@ -44,10 +17,30 @@
     border: 2px solid #DDD;
 }
 
+.vision-content-header {
+    border-radius: 0px;
+    box-shadow: none;
+}
+
 .vision-content > * {
-    padding: 0;
     padding-left: 3rem;
     padding-right: 3rem;
+}
+
+.vision-content h1 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.vision-content h2 {
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    font-size: 3rem;
+}
+
+.vision-inside-content {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* 8.4 Images */
@@ -57,12 +50,8 @@
     float: right;
 }
 
-.pollution-img img {
+.pollution-img {
     border-radius: 10px;
-}
-
-.vision-content h2 {
-    padding-bottom: 3rem;
 }
 
 /* 8.5 Responsive */
@@ -89,13 +78,12 @@
 @media (max-width: 700px){
     .pollution-img {
         float: none;
-        margin: auto;
-        text-align: center;
-    }
-
-    .pollution-img img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
         width: 68vw;
-        padding: 0 0 0 0;
+        padding: 0;
+        padding-bottom: 2rem;
     }
 
     .vision-page-header {
@@ -103,8 +91,16 @@
         margin: 2rem auto 2rem auto;
     }
 
-    .vision-content h2 {
+    .vision-content h2, h1 {
         text-align: center;
+    }
+
+    .vision-content h1 {
+        font-size: 4rem;
+    }
+
+    .vision-content h2 {
+        font-size: 3rem;
     }
 
     .vision-content p {

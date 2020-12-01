@@ -28,8 +28,12 @@
     text-transform: uppercase;
     letter-spacing: .5rem;
     font-weight: 600;
-    margin: 3rem 0;
+    margin-top: 3rem;
     padding: 1rem 3rem;
     display: inline-block;
     border-radius: 10rem;
+}
+
+footer .btn {
+    margin-bottom: 3rem;
 }
