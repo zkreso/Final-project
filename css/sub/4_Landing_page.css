@@ -136,7 +136,7 @@
     border: .5rem solid #477D81;
     */
     padding: 2rem 4rem;
-    margin-bottom: 15rem;
+    margin-bottom: 10rem;
 }
 
 .section--environment {
@@ -260,8 +260,9 @@
 
 @media (max-width: 900px) {
 
-    .section--styling {
+    .section-styling {
         padding: 2rem 3rem;
+        margin-bottom: 7.5rem;
     }
 
     .heroImage {
@@ -286,11 +287,9 @@
 }
 
 @media (max-width: 600px) {
-    
 
     .mainContent {
-    display: block;
-    margin: 0 3rem;
+    grid-template-columns: 1fr 20fr 1fr;
     }
 
     .climate-goal-hidden {position: static;}
@@ -312,6 +311,10 @@
 }
 
 @media (max-width: 400px) {
+
+    .section-styling {
+        margin-bottom: 5rem;
+    }
 
     .heroImage {
         border-radius: 1rem;

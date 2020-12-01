@@ -6,9 +6,9 @@ Isak:
 
 mobilbilde
 skyggen
-tilhørende
-eksperimenter med marg landing
-halver avstand mellom divs
+tilhørende div
+
+
 alt tekst
 variables copy paste
 Fikse html ref fra links til stylesheet
@@ -36,3 +36,5 @@ Navbar
 linje til navbar
 Read more button
 styling vision
+eksperimenter med marg landing
+halver avstand mellom divs
