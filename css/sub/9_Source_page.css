@@ -8,7 +8,7 @@
 
 /* 9.2 Header */
 
-.sources-page-header {
+/*.sources-page-header {
     max-width: 140rem;
     margin: 0 auto 3rem auto;
     padding: 0;
@@ -16,7 +16,7 @@
     box-shadow: 0px 5px #DDD;
     border: 2px solid #DDD;
     border-radius: 25px;
-}
+}*/
 
 .sources-page-header h1 {
     padding: 3rem 3rem;
@@ -26,7 +26,8 @@
 
 .sources-container {
     margin: auto;
-    max-width: 140rem;
+    max-width: 105rem;
+    margin-bottom: 3rem;
     background-color: white;
     box-shadow: 0px 5px #DDD;
     border: 2px solid #DDD;
@@ -37,6 +38,7 @@
 
 .reference-list {
     padding: 0 3rem 0 5rem;
+    max-width: 80%;
 }
 
 .link-break {
@@ -56,5 +58,11 @@
     .sources-page-header, .sources-container {
         border: none;
         border-radius: 0px;
+    }
+}
+
+@media (max-width: 700px) {
+    .reference-list {
+        max-width: none;
     }
 }

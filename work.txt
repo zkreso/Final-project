@@ -14,11 +14,7 @@ siste pri: link til un bærekraftmål
 
 Øystein:
 
-tekst app-pitch
 tekstansvarlig
-linjeskift vision
-avstand footer sources
-merge divs sources
 
 siste pri: sjekk sup
 
@@ -39,3 +35,7 @@ mobilbilde
 skyggen
 tilhørende div
 alt tekst
+avstand footer sources
+merge divs sources
+linjeskift vision
+tekst app-pitch

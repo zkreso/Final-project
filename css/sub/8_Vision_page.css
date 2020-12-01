@@ -4,7 +4,7 @@
     width: 100%;
 }
 
-/* 8.3 Boxes/sections in container */
+/* 8.2 Boxes/sections in container */
 
 .vision-content {
     max-width: 105rem;
@@ -43,7 +43,7 @@
     margin-right: auto;
 }
 
-/* 8.4 Images */
+/* 8.3 Images */
 
 .pollution-img {
     padding: 1rem 3rem 3rem 4rem;
@@ -54,7 +54,7 @@
     border-radius: 10px;
 }
 
-/* 8.5 Responsive */
+/* 8.4 Responsive */
 
 @media (max-width: 1000px){
     .pollution-img img{
