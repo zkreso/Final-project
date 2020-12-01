@@ -7,7 +7,7 @@ Isak:
 
 
 
-
+Fjern imports før levering
 Fikse html ref fra links til stylesheet
 
 siste pri: link til un bærekraftmål

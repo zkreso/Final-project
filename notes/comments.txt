@@ -11,7 +11,7 @@ app page er bra
 resten må kanskje gjøres noe med
 wcag.com
 
-fjern liten tekst
+fjern minimert tekst
 
 fjern imports før levering
 
