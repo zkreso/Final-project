@@ -103,7 +103,7 @@
 
 /* 4.2 Main (of landing page) */
 
-.left-grid-column {
+.left-column {
     position: relative;
 }
 
@@ -349,4 +349,25 @@
     }
 
     
+}
+
+/* IE support */
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .climate-goal {
+        display: flex;
+        justify-content: center;
+    }
+
+    .center-column {
+        flex-basis: 75%;
+    }
+
+    .left-column {
+        flex-basis: 12.5%;
+    }
+    
+    .right-column {
+        flex-basis: 12.5%;
+    }
 }
