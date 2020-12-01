@@ -6,7 +6,7 @@ Isak:
 
 
 
-alt tekst
+
 variables copy paste
 Fikse html ref fra links til stylesheet
 
@@ -38,3 +38,4 @@ halver avstand mellom divs
 mobilbilde
 skyggen
 tilhørende div
+alt tekst
