@@ -5,6 +5,7 @@
 .main-vision-page {
     width: 100%;
     margin-bottom: 10rem;
+    background-image: linear-gradient(to bottom,#efefef, rgba(1, 75, 81, 0.40), rgba(1, 75, 81, 0.60), #efefef);
 }
 
 /* 8.2 Boxes/sections in container */
