@@ -4,8 +4,7 @@ Zlatko:
 
 Isak:
 
-mobilbilde
-skyggen
+
 tilhørende div
 alt tekst
 variables copy paste
@@ -36,3 +35,5 @@ Read more button
 styling vision
 eksperimenter med marg landing
 halver avstand mellom divs
+mobilbilde
+skyggen
