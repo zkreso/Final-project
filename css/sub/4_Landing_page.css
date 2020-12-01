@@ -133,17 +133,11 @@
 .section-styling {
     margin: 2rem auto;
     background-color: #fff;
-    /*
-    border-radius: 2.5rem;
-    box-shadow: 1rem 1rem 3rem rgba(0,0,0,0.2);;
-    border: .5rem solid #477D81;
-    */
     padding: 2rem 4rem;
     margin-bottom: 10rem;
 }
 
-.section--environment {
-    /*background-image: linear-gradient(to bottom,#efefef, #014c5146, #014c517c, #efefef), url(../../images/Rainforest.jpg);*/
+.section-environment {
     background-image: linear-gradient(to bottom,#efefef, rgba(1, 75, 81, 0.40), rgba(1, 75, 81, 0.60), #efefef), url(../../images/Rainforest.jpg);
     background-size: cover;
     background-position: bottom;

@@ -62,9 +62,34 @@ p {
     margin: auto;
 }
 
+/* Buttons */
 
-/* Standard padding for divs/sections containing text */
-/* Selects the first element in the div and adds padding to top */
+.btn:hover {
+    transform: translateY(-.3rem);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+    margin-bottom: 0rem;
+}
+
+.btn:active {
+    transform: translateY(-.1rem);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+}
+
+.btn:link, .btn:visited {
+    font-size: 1.6rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    font-weight: 600;
+    margin-top: 3rem;
+    padding: 1rem 3rem;
+    display: inline-block;
+    border-radius: 10rem;
+}
+
+
+/* Standard padding for divs/sections containing text
+ Selects the first element in the div and adds padding to top */
 .standard-padding > *:first-child {
     padding-top: 3rem;
 }
@@ -74,9 +99,8 @@ p {
     padding-bottom: 3rem;
 }
 
-/*  MEDIA QUERY
-    Global styles on mobile
-*/
+/*  MEDIA QUERY 
+Global styles on mobile */
 
 @media (max-width: 600px) {
     
