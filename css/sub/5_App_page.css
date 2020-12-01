@@ -159,5 +159,57 @@
     .app--page--summary h1 {
         font-size: 4rem;
     }
+
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /* IE10+ CSS */
+    .main-grid-container {
+        display: flex;
+        background-color: white;
+        border-radius: 25px;
+        box-shadow: 0px 5px #DDD;
+        border: 2px solid #DDD;
+    }
+
+    .grid-col-right {   
+        display: flex;
+        flex-direction: column;
+        flex-basis: 50%;
+        flex-grow: 0;
+    }
+
+    .progress-graphic {     
+        max-width: auto;
+        margin: 0;
     
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        bottom: 12%;
+        display: flex;
+    
+        align-items: center;
+    }
+ }
+
+ @media only screen and (max-width: 900px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /* IE10+ CSS on small resolutions */
+    .main-grid-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .grid-col-left {
+        flex-basis: 50%;
+        flex-shrink: 0;
+        flex-grow: 1;
+    }
+
+    .grid-col-right {
+        flex-basis: 300px;   
+        flex-grow: 1;
+        flex-shrink: 0;
+    }
+
 }
